@@ -5,14 +5,19 @@
   --alabaster: 87 22% 90%;
   
 /*  fonts */
+/* font-weight */
   --fw-thin: 300;
   --fw-bold: 600;
+  --fw-mega-bold: 700;
+
+  /* font-size */
   --fs-400: .85em;
   --fs-500: 1.25em;
   --fs-700: 1.5em;
   --fs-900: 2.5em;
-  --fw-mega-bold: 700;
-  --fs-sans: 'Nanum Gothic', sans-serif;
+
+  /* font-style */
+  --fs-sans-normal: 'Nanum Gothic', sans-serif;
   --fs-serif: 'Playfair Display', serif;
 }
 
@@ -164,25 +169,30 @@ nav a {
 }
 
 /* colors */
+.bg-dark-purple {
+  background-color: hsl(var(--dark-purple));
+}
+.bg-irresistible {
+  background-color: hsl(var(--irresistible));
+}
+.bg-alabaster {
+  background-color: hsl(var(--alabaster));
+}
+.bg-vivid-tangerine {
+  background-color: hsl(var(--vivid-tangerine));
+}
 
-.bg-dark {
-  background-color: hsl(var(--clr-dark));
+.text-vivid-tangerine {
+  color: hsl(var(--vivid-tangerine));
 }
-.bg-accent {
-  background-color: hsl(var(--clr-light));
+.text-dark-purple {
+  color: hsl(var(--dark-purple));
 }
-.bg-white {
-  background-color: hsl(var(--clr-white));
+.text-irresistible {
+  color: hsl(var(--irresistible));
 }
-
-.text-dark {
-  color: hsl(var(--clr-dark));
-}
-.text-accent {
-  color: hsl(var(--clr-light));
-}
-.text-white {
-  color: hsl(var(--clr-white));
+.text-alabaster {
+  color: hsl(var(--alabaster));
 }
 
 /* typography */
@@ -214,14 +224,8 @@ nav a {
 .fs-900 {
   font-size: var(--fs-900);
 }
-.fs-800 {
-  font-size: var(--fs-800);
-}
 .fs-700 {
   font-size: var(--fs-700);
-}
-.fs-600 {
-  font-size: var(--fs-600);
 }
 .fs-500 {
   font-size: var(--fs-500);
@@ -229,15 +233,8 @@ nav a {
 .fs-400 {
   font-size: var(--fs-400);
 }
-.fs-300 {
-  font-size: var(--fs-300);
-}
-.fs-200 {
-  font-size: var(--fs-200);
-}
 
 .fs-900,
-.fs-800,
 .fs-700,
 .fs-600 {
   line-height: 1.1;
