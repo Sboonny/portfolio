@@ -12,12 +12,13 @@
 
   /* font-size */
   --fs-400: .85em;
-  --fs-500: 1.25em;
+  --fs-500: 1.05em;
   --fs-700: 1.5em;
   --fs-900: 2.5em;
 
   /* font-style */
-  --fs-sans-normal: 'Nanum Gothic', sans-serif;
+  --fs-cursive: 'Beau Rivage', cursive;
+  --fs-sans-normal: 'Montserrat', sans-serif;
   --fs-serif: 'Playfair Display', serif;
 }
 
@@ -77,7 +78,7 @@ a:not([class]) {
 /* Make images easier to work with */
 img,
 picture {
-  max-width: 100%;
+  max-width: 80%;
   display: block;
 }
 
@@ -119,12 +120,19 @@ nav a {
   display: flex;
   gap: var(--gap, 1rem);
 }
+.flex-direcition-column {
+  flex-direction: column
+}
 
 .grid {
   display: grid;
   gap: var(--gap, 1rem);
 }
 
+.center {
+  align-items: center;
+  justify-content: center;
+}
 .d-block {
   display: block;
 }
@@ -196,22 +204,34 @@ nav a {
 }
 
 /* typography */
-
+.ff-curve {
+  font-family: var(--fs-cursive)
+}
 .ff-serif {
-  font-family: var(--ff-serif);
+  font-family: var(--fs-serif)
 }
 .ff-sans-normal {
-  font-family: var(--ff-sans-normal);
+  font-family: var(--fs-sans-normal)
+}
+
+.fw-thin {
+  font-weight: var(--fw-thin);
+}
+.fw-bold {
+  font-weight: var(--fw-bold);
+}
+.fw-mega-bold {
+  font-weight: var(--fw-mega-bold);
 }
 
 .letter-spacing-1 {
-  letter-spacing: 4.75px;
+  letter-spacing: 2.35px;
 }
 .letter-spacing-2 {
-  letter-spacing: 2.7px;
+  letter-spacing: 1.85px;
 }
 .letter-spacing-3 {
-  letter-spacing: 2.35px;
+  letter-spacing: 1.15px;
 }
 
 .uppercase {
