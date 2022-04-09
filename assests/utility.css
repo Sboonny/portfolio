@@ -48,7 +48,9 @@ p,
 figure,
 blockquote,
 dl,
-dd {
+dd,
+img,
+picture {
   margin: 0;
 }
 
@@ -78,7 +80,7 @@ a:not([class]) {
 /* Make images easier to work with */
 img,
 picture {
-  max-width: 80%;
+  max-width: 100%;
   display: block;
 }
 
@@ -133,6 +135,16 @@ nav a {
   align-items: center;
   justify-content: center;
 }
+
+.m-in-2 {
+  margin-inline: 2em;
+}
+
+.border-top {
+  border-top: 2px solid hsl(var(--dark-purple)/.7);
+}
+
+
 .d-block {
   display: block;
 }
