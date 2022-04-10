@@ -22,3 +22,17 @@
 }
 
 /* animation  */
+
+@keyframes header {
+  from {
+     color: hsl(var(--vivid-tangerine) /.1);
+  }
+  to {
+    color: hsl(var(--dark-purple));
+  }
+}
+
+.header-animation {
+  animation: header 1s ease-in;
+  animation-fill-mode: both;
+}
