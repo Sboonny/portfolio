@@ -1,5 +1,24 @@
+/* layout */
 .freecodecamp-img {
-  max-width: 50vw;
+  max-width: min(50vw, 25rem);
 }
 
+@media (min-width: 45em) {
 
+  .live-demo {
+    grid-area: "live";
+  }
+
+  .certifications {
+    grid-area: "cert";
+  }
+
+  .grid-home {
+    gap: 1em;
+    grid-template-areas:
+      'live cert'
+      'live cert'
+  }
+}
+
+/* animation  */
