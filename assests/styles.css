@@ -1,10 +1,10 @@
-/* layout */
+/* layout positioning */
 .freecodecamp-img {
   max-width: min(55vw, 28rem);
 }
 
 @media (min-width: 45em) {
-
+ 
   .live-demo {
     grid-area: "live";
   }
@@ -20,6 +20,43 @@
       'live cert'
   }
 }
+
+/* Layout styling */
+li p {
+  text-align: center;
+}
+h2:first-child::before {
+  content: "";
+  width: clamp(30vw, 55em ,62.5vw);
+  position: absolute;
+  height: 2px;
+  border-bottom: 2px solid hsL(var(--dark-purple)/.5);
+}
+
+@media (min-width: 45em) {
+  h2:first-child::before {
+    content: "";
+    width: clamp(33vw, 90em ,80vw);
+    position: absolute;
+  
+    height: 2px;
+    border-bottom: 2px solid red;
+  }
+}
+
+section a {
+  color: hsl(var(--irresistible));
+  font-weight: 600;
+  text-decoration: none;
+  letter-spacing: .6px;
+}
+
+ section a:hover, 
+ section a:focus {
+   color: hsl(var(--vivid-tangerine));
+ cursor: pointer;
+}
+
 
 /* animation  */
 
