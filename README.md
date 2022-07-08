@@ -31,23 +31,33 @@ This is made so I don't keep searching [its docs](https://www.prisma.io/docs/gui
 
 create a migration
 
-> npx prisma migrate dev --name `migrate name`
+```nodejs
+npx prisma migrate dev --name `migrate name`
+```
 
 to create a draft migration
 
-> npx prisma migrate dev --name `migrate name` --create-only
+```nodejs
+npx prisma migrate dev --name `migrate name` --create-only
+```
 
 migrations to databases that already exist and cannot be reset
 
-> npx prisma migrate deploy
+```nodejs
+npx prisma migrate deploy
+```
 
 migration that should be ignored
 
-> npx prisma migrate resolve --applied `migrate name here`
+```nodejs
+npx prisma migrate resolve --applied `migrate name here`
+```
 
 get to the data model of failed modal
 
-> prisma migrate diff
+```nodejs
+prisma migrate diff
+```
 
 </details>
 
