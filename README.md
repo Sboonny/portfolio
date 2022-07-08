@@ -19,3 +19,82 @@ For links with these format, `[hexadecimal numbers here](https://www.freecodecam
 
 - https://cheerio.js.org/
 - https://axios-http.com/
+
+**Prisma Node Commands cheat sheet**
+
+This is made so I don't keep searching [its docs](https://www.prisma.io/docs/guides)
+
+<details>
+ <summary>Node shortcuts</summary>
+
+---
+
+create a migration
+
+> npx prisma migrate dev --name `migrate name`
+
+to create a draft migration
+
+> npx prisma migrate dev --name `migrate name` --create-only
+
+migrations to databases that already exist and cannot be reset
+
+> npx prisma migrate deploy
+
+migration that should be ignored
+
+> npx prisma migrate resolve --applied `migrate name here`
+
+get to the data model of failed modal
+
+> prisma migrate diff
+
+</details>
+
+<details>
+ <summary>Schema structure</summary>
+
+```primsa
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id      Int      @id @default(autoincrement())
+  name    String
+  posts   Post[]
+  profile Profile?
+}
+
+model Profile {
+  id       Int    @id @default(autoincrement())
+  biograpy String // Intentional typo!
+  userId   Int    @unique
+  user     User   @relation(fields: [userId], references: [id])
+}
+
+model Post {
+  id         Int        @id @default(autoincrement())
+  title      String
+  published  Boolean    @default(true)
+  content    String
+  authorId   Int
+  author     User       @relation(fields: [authorId], references: [id])
+  categories Category[]
+}
+
+model Category {
+  id    Int    @id @default(autoincrement())
+  name  String
+  posts Post[]
+
+  @@unique([name])
+}
+```
+
+</details>
