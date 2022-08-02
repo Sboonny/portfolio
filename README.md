@@ -108,3 +108,7 @@ model Category {
 ```
 
 </details>
+
+---
+
+To create charts use `flowchart`
