@@ -112,3 +112,5 @@ model Category {
 ---
 
 To create charts use `flowchart`
+
+to check propTypes https://reactjs.org/docs/typechecking-with-proptypes.html
