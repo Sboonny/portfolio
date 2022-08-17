@@ -114,3 +114,9 @@ model Category {
 To create charts use `flowchart`
 
 to check propTypes https://reactjs.org/docs/typechecking-with-proptypes.html
+
+---
+
+Node/npm
+
+running `npx npkill` will cleare node-modules files in the system
