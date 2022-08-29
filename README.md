@@ -5,9 +5,12 @@
 ## library of answers, I found
 
 **Git**:
+
 - setting a function to true `git config --global core.fsmonitor true`
 
 - exit the credential-cache, as password is probably cached in there `git credential-cache exit`
+
+- https://git-scm.com/docs/git-reflog, to pick list of commits
 
 
 **Regex**:
