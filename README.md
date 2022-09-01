@@ -123,3 +123,52 @@ to check propTypes https://reactjs.org/docs/typechecking-with-proptypes.html
 Node/npm
 
 running `npx npkill` will cleare node-modules files in the system
+
+## Links to Services, I use a lot
+
+### FrontEnd Client side
+
+- For frontend session replays https://www.highlight.io/
+
+### BackEnd Queries side
+
+- For backend error handling https://www.axiom.co/
+- Making backend queries easier https://github.com/trpc/trpc
+
+### Stock Images
+
+- https://www.pexels.com/
+- https://unsplash.com/
+- https://stocksnap.io/
+
+
+### Illustrations
+
+- https://undraw.co/illustrations
+- https://www.openpeeps.com/
+- https://storytale.io/
+
+### icons
+
+- https://thenounproject.com/
+- https://simpleicons.org/
+- https://icons8.com/icons
+
+### fonts 
+
+- https://fonts.google.com/
+- http://velvetyne.fr/
+- https://www.losttype.com/
+
+### Videos
+
+- https://www.pexels.com/videos
+- https://mixkit.co/
+- https://coverr.co/
+
+### Designtools 
+
+- https://express.adobe.com/sp/
+- https://coolors.co/
+- https://fontjoy.com/
+- https://type-scale.com/
