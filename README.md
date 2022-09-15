@@ -22,7 +22,7 @@ git merge main
 (solve conflict in client/files.ext)
 git add .
 git commit
-git push origin chore/add-skip-to-content
+git push origin branch-name
 ```
 
 **Note:** run `npm install --package-lock-only ` if your conflict in package lock
