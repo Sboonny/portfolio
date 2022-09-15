@@ -12,23 +12,20 @@
 
 - https://git-scm.com/docs/git-reflog, to pick list of commits
 
-- <details>
-   <summary>merge conflict steps</summary>
+- merge conflict git commands
    
-   ```bash
+```bash
 git checkout main
 git pull upstream main
-git checkout chore/add-skip-to-content
+git checkout bransh-name
 git merge main
-(solve conflict in client/package.json)
-npm install --package-lock-only
+(solve conflict in client/files.ext)
 git add .
 git commit
 git push origin chore/add-skip-to-content
 ```
 
-</details>
-
+**Note:** run `npm install --package-lock-only ` if your conflict in package lock
 
 **Regex**:
 
