@@ -12,6 +12,23 @@
 
 - https://git-scm.com/docs/git-reflog, to pick list of commits
 
+- <details>
+   <summary>merge conflict steps</summary>
+   
+   ```bash
+git checkout main
+git pull upstream main
+git checkout chore/add-skip-to-content
+git merge main
+(solve conflict in client/package.json)
+npm install --package-lock-only
+git add .
+git commit
+git push origin chore/add-skip-to-content
+```
+
+</details>
+
 
 **Regex**:
 
