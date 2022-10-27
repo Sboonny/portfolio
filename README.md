@@ -184,3 +184,7 @@ running `npx npkill` will cleare node-modules files in the system
 - https://coolors.co/
 - https://fontjoy.com/
 - https://type-scale.com/
+
+### Transform code snippets
+
+- https://transform.tools/
