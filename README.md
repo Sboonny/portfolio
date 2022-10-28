@@ -153,7 +153,6 @@ running `npx npkill` will cleare node-modules files in the system
 - https://unsplash.com/
 - https://stocksnap.io/
 
-
 ### Illustrations
 
 - https://undraw.co/illustrations
@@ -188,3 +187,8 @@ running `npx npkill` will cleare node-modules files in the system
 ### Transform code snippets
 
 - https://transform.tools/
+
+### Create unique designs for unique situations
+
+- https://www.shapedivider.app/
+- https://app.haikei.app/
