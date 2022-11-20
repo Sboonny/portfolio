@@ -12,17 +12,14 @@
 
 - https://git-scm.com/docs/git-reflog, to pick list of commits
 
-- merge conflict git commands
+- merge conflict git commands, https://stackoverflow.com/questions/5308816/how-can-i-merge-multiple-commits-onto-another-branch-as-a-single-squashed-commit
    
-```bash
-git checkout main
-git pull upstream main
-git checkout bransh-name
-git merge main
-(solve conflict in client/files.ext)
-git add .
-git commit
-git push origin branch-name
+```console
+git branch -m backup-feature
+git switch <target-branch>
+git checkout -b <whatever-you-like>
+git merge --squash backup-feature
+git commit -m "feat: new feature!"
 ```
 
 **Note:** run `npm install --package-lock-only ` if your conflict in package lock
