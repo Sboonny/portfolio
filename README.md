@@ -75,53 +75,6 @@ prisma migrate diff
 
 </details>
 
-<details>
- <summary>Schema structure</summary>
-
-```primsa
-generator client {
-  provider = "prisma-client-js"
-}
-
-datasource db {
-  provider = "postgresql"
-  url      = env("DATABASE_URL")
-}
-
-model User {
-  id      Int      @id @default(autoincrement())
-  name    String
-  posts   Post[]
-  profile Profile?
-}
-
-model Profile {
-  id       Int    @id @default(autoincrement())
-  biograpy String // Intentional typo!
-  userId   Int    @unique
-  user     User   @relation(fields: [userId], references: [id])
-}
-
-model Post {
-  id         Int        @id @default(autoincrement())
-  title      String
-  published  Boolean    @default(true)
-  content    String
-  authorId   Int
-  author     User       @relation(fields: [authorId], references: [id])
-  categories Category[]
-}
-
-model Category {
-  id    Int    @id @default(autoincrement())
-  name  String
-  posts Post[]
-
-  @@unique([name])
-}
-```
-
-</details>
 
 ---
 
@@ -190,3 +143,7 @@ running `npx npkill` will cleare node-modules files in the system
 
 - https://www.shapedivider.app/
 - https://app.haikei.app/
+
+### Create a digram of the database
+
+- https://dbdiagram.io/
