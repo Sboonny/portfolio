@@ -147,3 +147,7 @@ running `npx npkill` will cleare node-modules files in the system
 ### Create a digram of the database
 
 - https://dbdiagram.io/
+
+### Publish package to npm
+
+- https://www.npmjs.com/package/np
