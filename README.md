@@ -7,11 +7,8 @@
 **Git**:
 
 - setting a function to true `git config --global core.fsmonitor true`
-
 - exit the credential-cache, as password is probably cached in there `git credential-cache exit`
-
 - https://git-scm.com/docs/git-reflog, to pick list of commits
-
 - merge conflict git commands, https://stackoverflow.com/questions/5308816/how-can-i-merge-multiple-commits-onto-another-branch-as-a-single-squashed-commit
    
 ```console
@@ -23,6 +20,13 @@ git commit -m "feat: new feature!"
 ```
 
 **Note:** run `npm install --package-lock-only ` if your conflict in package lock
+
+To test the component fault tolerance
+
+```ts
+  // What happens if I messed up here? Let's find out!
+  throw new Error("oops, I made a mistake!")
+```
 
 **Regex**:
 
