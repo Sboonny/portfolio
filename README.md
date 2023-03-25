@@ -6,10 +6,10 @@
 
 **Git**:
 
-- setting a function to true `git config --global core.fsmonitor true`
-- exit the credential-cache, as password is probably cached in there `git credential-cache exit`
+- Setting a function to true `git config --global core.fsmonitor true`
+- Exit the credential-cache, as password is probably cached in there `git credential-cache exit`
 - https://git-scm.com/docs/git-reflog, to pick list of commits
-- merge conflict git commands, https://stackoverflow.com/questions/5308816/how-can-i-merge-multiple-commits-onto-another-branch-as-a-single-squashed-commit
+- Merge conflict git commands, https://stackoverflow.com/questions/5308816/how-can-i-merge-multiple-commits-onto-another-branch-as-a-single-squashed-commit
    
 ```console
 git branch -m backup-feature
@@ -17,6 +17,13 @@ git switch <target-branch>
 git checkout -b <whatever-you-like>
 git merge --squash backup-feature
 git commit -m "feat: new feature!"
+```
+
+- Rebase PR, if merge isn't a valid option
+
+```console
+git fetch upstream
+git rebase -i upstream/main
 ```
 
 **Note:** run `npm install --package-lock-only ` if your conflict in package lock
