@@ -26,7 +26,13 @@ git fetch upstream
 git rebase -i upstream/main
 ```
 
-**Note:** run `npm install --package-lock-only ` if your conflict in package lock
+- Conflict in package lock you can run:
+
+```console
+npm install --package-lock-only
+git checkout upstream/main -- package.json
+git checkout upstream/main -- pnpm-lock.yaml
+```
 
 To test the component fault tolerance
 
