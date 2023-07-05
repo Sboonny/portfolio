@@ -114,6 +114,11 @@ running `npx npkill` will cleare node-modules files in the system
 - For backend error handling https://www.axiom.co/
 - Making backend queries easier https://github.com/trpc/trpc
 
+### CSS generators
+
+- https://www.joshwcomeau.com/shadow-palette/
+- https://realfavicongenerator.net/
+
 ### Stock Images
 
 - https://www.pexels.com/
@@ -131,6 +136,7 @@ running `npx npkill` will cleare node-modules files in the system
 - https://thenounproject.com/
 - https://simpleicons.org/
 - https://icons8.com/icons
+- https://icones.js.org/
 
 ### fonts 
 
