@@ -2,6 +2,17 @@
 
 [Live Url](https://sboonny.vercel.app/)
  
+## Performance answers
+
+To expose garbage collector
+
+```ts
+import { setFlagsFromString } from 'v8';
+import { runInNewContext } from 'vm';
+setFlagFromString('--expose_gc');
+const gc = runInNewContext('gc');
+```
+
 ## library of answers, I found
 
 **Git**:
