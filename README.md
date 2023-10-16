@@ -15,6 +15,24 @@ const gc = runInNewContext('gc');
 
 ## library of answers, I found
 
+**Type Helpers
+
+- Combine woods
+
+```ts
+type Prettify<T> = {
+  [K in keyof T]: T[K];
+} & {};
+
+type Combine<T1, T2> = Prettify<
+ {
+ [K in keyof (T1 | T2)]: T1[K] | T2[K];
+ } & Partial< Omit<T1, keyof (T1 | T2)> & Omit<T2, keyof (T1 | T2)>>
+>;
+```
+
+
+
 **Git**:
 
 - Setting a function to true `git config --global core.fsmonitor true`
