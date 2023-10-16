@@ -25,9 +25,9 @@ type Prettify<T> = {
 } & {};
 
 type Combine<T1, T2> = Prettify<
- {
- [K in keyof (T1 | T2)]: T1[K] | T2[K];
- } & Partial< Omit<T1, keyof (T1 | T2)> & Omit<T2, keyof (T1 | T2)>>
+  {
+    [K in keyof (T1 | T2)]: T1[K] | T2[K];
+  } & Partial<Omit<T1, keyof (T1 | T2)> & Omit<T2, keyof (T1 | T2)>>
 >;
 ```
 
