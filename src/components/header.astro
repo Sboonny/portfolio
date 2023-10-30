@@ -1,9 +1,5 @@
 ---
-interface Props {
-  expanded: boolean;
-}
-
-const { expanded } = Astro.props;
+const expanded = false;
 ---
 
 <header>
@@ -17,7 +13,7 @@ const { expanded } = Astro.props;
       class="primary-navigation underline-indicators flex"
     >
       <li>
-        <a href="pages/loa"><span aria-hidden="true">01</span>LOA</a>
+        <a href="./loa"><span aria-hidden="true">01</span>LOA</a>
       </li>
     </ul>
   </nav>

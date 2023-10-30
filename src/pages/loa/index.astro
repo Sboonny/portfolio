@@ -38,11 +38,13 @@ type Combine<T1, T2> = Prettify<
 <ul>
   <li>
     Setting a function to true <code
-      >git config --global core.fsmonitor true</code>
+      >git config --global core.fsmonitor true</code
+    >
   </li>
   <li>
     Exit the credential-cache, as password is probably cached in there <code
-      >git credential-cache exit</code>
+      >git credential-cache exit</code
+    >
   </li>
   <li>
     <a
@@ -56,20 +58,21 @@ type Combine<T1, T2> = Prettify<
       href="https://stackoverflow.com/questions/5308816/how-can-i-merge-multiple-commits-onto-another-branch-as-a-single-squashed-commit"
       target="_blank"
       rel="noopener noreferrer nofollow"
-      >https://stackoverflow.com/questions/5308816/how-can-i-merge-multiple-commits-onto-another-branch-as-a-single-squashed-commit</a>
+      >https://stackoverflow.com/questions/5308816/how-can-i-merge-multiple-commits-onto-another-branch-as-a-single-squashed-commit</a
+    >
   </li>
 </ul>
 
 <pre><code class="language-console">
 git branch -m backup-feature
-git switch <target-branch>
-git checkout -b <whatever-you-like>
+git switch target-branch
+git checkout -b whatever-you-like
 git merge --squash backup-feature
 git commit -m "feat: new feature!"
-</whatever-you-like></target-branch>
+</code></pre>
 
 <ul>
-<li>Rebase PR, if merge isn't a valid option</li>
+  <li>Rebase PR, if merge isn't a valid option</li>
 </ul>
 
 <pre><code class="language-console">
@@ -78,7 +81,7 @@ git rebase -i upstream/main
 </code></pre>
 
 <ul>
-<li>Conflict in package lock you can run:</li>
+  <li>Conflict in package lock you can run:</li>
 </ul>
 
 <pre><code class="language-console">
@@ -96,13 +99,35 @@ throw new Error("oops, I made a mistake!");
 
 <p><strong>Regex:</strong></p>
 
-<p>For links with these format, <code>hexadecimal numbers here</code> regex <code>/\[(.*?)\]\((.*?)\)/gm</code> should target them and <code><a href="$2" target="_blank" rel="noopener noreferrer nofollow">$1</a></code> will swap them into <code><a href="https://www.freecodecamp.org/news/hexadecimal-number-system/" target="_blank" rel="noopener noreferrer nofollow">hexadecimal numbers here</a></code></p>
+<p>
+  For links with these format, <code>hexadecimal numbers here</code> regex <code
+    >/\[(.*?)\]\((.*?)\)/gm</code
+  > should target them and <code
+    ><a href="$2" target="_blank" rel="noopener noreferrer nofollow">$1</a
+    ></code
+  > will swap them into <code
+    ><a
+      href="https://www.freecodecamp.org/news/hexadecimal-number-system/"
+      target="_blank"
+      rel="noopener noreferrer nofollow">hexadecimal numbers here</a
+    ></code>
+</p>
 
 <p><strong>Scraping:</strong></p>
 
 <ul>
-<li><a href="https://cheerio.js.org/" target="_blank" rel="noopener noreferrer nofollow">https://cheerio.js.org/</a></li>
-<li><a href="https://axios-http.com/" target="_blank" rel="noopener noreferrer nofollow">https://axios-http.com/</a></li>
+  <li>
+    <a
+      href="https://cheerio.js.org/"
+      target="_blank"
+      rel="noopener noreferrer nofollow">https://cheerio.js.org/</a>
+  </li>
+  <li>
+    <a
+      href="https://axios-http.com/"
+      target="_blank"
+      rel="noopener noreferrer nofollow">https://axios-http.com/</a>
+  </li>
 </ul>
 
 <hr />
@@ -113,109 +138,271 @@ throw new Error("oops, I made a mistake!");
 
 <p>Node/npm</p>
 
-<p>running <code>npx npkill</code> will cleare node-modules files in the system</p>
+<p>
+  running <code>npx npkill</code> will cleare node-modules files in the system
+</p>
 
 <h2>Links to Services, I use a lot</h2>
 
 <h3>FrontEnd Client side</h3>
 
 <ul>
-<li>For frontend session replays <a href="https://www.highlight.io/" target="_blank" rel="noopener noreferrer nofollow">https://www.highlight.io/</a></li>
+  <li>
+    For frontend session replays <a
+      href="https://www.highlight.io/"
+      target="_blank"
+      rel="noopener noreferrer nofollow">https://www.highlight.io/</a>
+  </li>
 </ul>
 
 <h3>BackEnd Queries side</h3>
 
 <ul>
-<li>For backend error handling <a href="https://www.axiom.co/" target="_blank" rel="noopener noreferrer nofollow">https://www.axiom.co/</a></li>
-<li>Making backend queries easier <a href="https://github.com/trpc/trpc" target="_blank" rel="noopener noreferrer nofollow">https://github.com/trpc/trpc</a></li>
+  <li>
+    For backend error handling <a
+      href="https://www.axiom.co/"
+      target="_blank"
+      rel="noopener noreferrer nofollow">https://www.axiom.co/</a>
+  </li>
+  <li>
+    Making backend queries easier <a
+      href="https://github.com/trpc/trpc"
+      target="_blank"
+      rel="noopener noreferrer nofollow">https://github.com/trpc/trpc</a>
+  </li>
 </ul>
 
 <h3>CSS generators</h3>
 
 <ul>
-<li><a href="https://www.joshwcomeau.com/shadow-palette/" target="_blank" rel="noopener noreferrer nofollow">https://www.joshwcomeau.com/shadow-palette/</a></li>
-<li><a href="https://realfavicongenerator.net/" target="_blank" rel="noopener noreferrer nofollow">https://realfavicongenerator.net/</a></li>
+  <li>
+    <a
+      href="https://www.joshwcomeau.com/shadow-palette/"
+      target="_blank"
+      rel="noopener noreferrer nofollow"
+      >https://www.joshwcomeau.com/shadow-palette/</a>
+  </li>
+  <li>
+    <a
+      href="https://realfavicongenerator.net/"
+      target="_blank"
+      rel="noopener noreferrer nofollow">https://realfavicongenerator.net/</a>
+  </li>
 </ul>
 
 <h3>Stock Images</h3>
 
 <ul>
-<li><a href="https://www.pexels.com/" target="_blank" rel="noopener noreferrer nofollow">https://www.pexels.com/</a></li>
-<li><a href="https://unsplash.com/" target="_blank" rel="noopener noreferrer nofollow">https://unsplash.com/</a></li>
-<li><a href="https://stocksnap.io/" target="_blank" rel="noopener noreferrer nofollow">https://stocksnap.io/</a></li>
+  <li>
+    <a
+      href="https://www.pexels.com/"
+      target="_blank"
+      rel="noopener noreferrer nofollow">https://www.pexels.com/</a>
+  </li>
+  <li>
+    <a
+      href="https://unsplash.com/"
+      target="_blank"
+      rel="noopener noreferrer nofollow">https://unsplash.com/</a>
+  </li>
+  <li>
+    <a
+      href="https://stocksnap.io/"
+      target="_blank"
+      rel="noopener noreferrer nofollow">https://stocksnap.io/</a>
+  </li>
 </ul>
 
 <h3>Illustrations</h3>
 
 <ul>
-<li><a href="https://undraw.co/illustrations" target="_blank" rel="noopener noreferrer nofollow">https://undraw.co/illustrations</a></li>
-<li><a href="https://www.openpeeps.com/" target="_blank" rel="noopener noreferrer nofollow">https://www.openpeeps.com/</a></li>
-<li><a href="https://storytale.io/" target="_blank" rel="noopener noreferrer nofollow">https://storytale.io/</a></li>
+  <li>
+    <a
+      href="https://undraw.co/illustrations"
+      target="_blank"
+      rel="noopener noreferrer nofollow">https://undraw.co/illustrations</a>
+  </li>
+  <li>
+    <a
+      href="https://www.openpeeps.com/"
+      target="_blank"
+      rel="noopener noreferrer nofollow">https://www.openpeeps.com/</a>
+  </li>
+  <li>
+    <a
+      href="https://storytale.io/"
+      target="_blank"
+      rel="noopener noreferrer nofollow">https://storytale.io/</a>
+  </li>
 </ul>
 
 <h3>icons</h3>
 
 <ul>
-<li><a href="https://thenounproject.com/" target="_blank" rel="noopener noreferrer nofollow">https://thenounproject.com/</a></li>
-<li><a href="https://simpleicons.org/" target="_blank" rel="noopener noreferrer nofollow">https://simpleicons.org/</a></li>
-<li><a href="https://icons8.com/icons" target="_blank" rel="noopener noreferrer nofollow">https://icons8.com/icons</a></li>
-<li><a href="https://icones.js.org/" target="_blank" rel="noopener noreferrer nofollow">https://icones.js.org/</a></li>
+  <li>
+    <a
+      href="https://thenounproject.com/"
+      target="_blank"
+      rel="noopener noreferrer nofollow">https://thenounproject.com/</a>
+  </li>
+  <li>
+    <a
+      href="https://simpleicons.org/"
+      target="_blank"
+      rel="noopener noreferrer nofollow">https://simpleicons.org/</a>
+  </li>
+  <li>
+    <a
+      href="https://icons8.com/icons"
+      target="_blank"
+      rel="noopener noreferrer nofollow">https://icons8.com/icons</a>
+  </li>
+  <li>
+    <a
+      href="https://icones.js.org/"
+      target="_blank"
+      rel="noopener noreferrer nofollow">https://icones.js.org/</a>
+  </li>
 </ul>
 
 <h3>fonts</h3>
 
 <ul>
-<li><a href="https://fonts.google.com/" target="_blank" rel="noopener noreferrer nofollow">https://fonts.google.com/</a></li>
-<li><a href="http://velvetyne.fr/" target="_blank" rel="noopener noreferrer nofollow">http://velvetyne.fr/</a></li>
-<li><a href="https://www.losttype.com/" target="_blank" rel="noopener noreferrer nofollow">https://www.losttype.com/</a></li>
+  <li>
+    <a
+      href="https://fonts.google.com/"
+      target="_blank"
+      rel="noopener noreferrer nofollow">https://fonts.google.com/</a>
+  </li>
+  <li>
+    <a
+      href="http://velvetyne.fr/"
+      target="_blank"
+      rel="noopener noreferrer nofollow">http://velvetyne.fr/</a>
+  </li>
+  <li>
+    <a
+      href="https://www.losttype.com/"
+      target="_blank"
+      rel="noopener noreferrer nofollow">https://www.losttype.com/</a>
+  </li>
 </ul>
 
 <h3>Videos</h3>
 
 <ul>
-<li><a href="https://www.pexels.com/videos" target="_blank" rel="noopener noreferrer nofollow">https://www.pexels.com/videos</a></li>
-<li><a href="https://mixkit.co/" target="_blank" rel="noopener noreferrer nofollow">https://mixkit.co/</a></li>
-<li><a href="https://coverr.co/" target="_blank" rel="noopener noreferrer nofollow">https://coverr.co/</a></li>
+  <li>
+    <a
+      href="https://www.pexels.com/videos"
+      target="_blank"
+      rel="noopener noreferrer nofollow">https://www.pexels.com/videos</a>
+  </li>
+  <li>
+    <a
+      href="https://mixkit.co/"
+      target="_blank"
+      rel="noopener noreferrer nofollow">https://mixkit.co/</a>
+  </li>
+  <li>
+    <a
+      href="https://coverr.co/"
+      target="_blank"
+      rel="noopener noreferrer nofollow">https://coverr.co/</a>
+  </li>
 </ul>
 
 <h3>Designtools</h3>
 
 <ul>
-<li><a href="https://express.adobe.com/sp/" target="_blank" rel="noopener noreferrer nofollow">https://express.adobe.com/sp/</a></li>
-<li><a href="https://coolors.co/" target="_blank" rel="noopener noreferrer nofollow">https://coolors.co/</a></li>
-<li><a href="https://fontjoy.com/" target="_blank" rel="noopener noreferrer nofollow">https://fontjoy.com/</a></li>
-<li><a href="https://type-scale.com/" target="_blank" rel="noopener noreferrer nofollow">https://type-scale.com/</a></li>
-<li><a href="https://www.canva.com/en_gb/" target="_blank" rel="noopener noreferrer nofollow">https://www.canva.com/en_gb/</a></li>
+  <li>
+    <a
+      href="https://express.adobe.com/sp/"
+      target="_blank"
+      rel="noopener noreferrer nofollow">https://express.adobe.com/sp/</a>
+  </li>
+  <li>
+    <a
+      href="https://coolors.co/"
+      target="_blank"
+      rel="noopener noreferrer nofollow">https://coolors.co/</a>
+  </li>
+  <li>
+    <a
+      href="https://fontjoy.com/"
+      target="_blank"
+      rel="noopener noreferrer nofollow">https://fontjoy.com/</a>
+  </li>
+  <li>
+    <a
+      href="https://type-scale.com/"
+      target="_blank"
+      rel="noopener noreferrer nofollow">https://type-scale.com/</a>
+  </li>
+  <li>
+    <a
+      href="https://www.canva.com/en_gb/"
+      target="_blank"
+      rel="noopener noreferrer nofollow">https://www.canva.com/en_gb/</a>
+  </li>
 </ul>
 
 <h3>Transform code snippets</h3>
 
 <ul>
-<li><a href="https://transform.tools/" target="_blank" rel="noopener noreferrer nofollow">https://transform.tools/</a></li>
+  <li>
+    <a
+      href="https://transform.tools/"
+      target="_blank"
+      rel="noopener noreferrer nofollow">https://transform.tools/</a>
+  </li>
 </ul>
 
 <h3>Create unique designs for unique situations</h3>
 
 <ul>
-<li><a href="https://www.shapedivider.app/" target="_blank" rel="noopener noreferrer nofollow">https://www.shapedivider.app/</a></li>
-<li><a href="https://app.haikei.app/" target="_blank" rel="noopener noreferrer nofollow">https://app.haikei.app/</a></li>
+  <li>
+    <a
+      href="https://www.shapedivider.app/"
+      target="_blank"
+      rel="noopener noreferrer nofollow">https://www.shapedivider.app/</a>
+  </li>
+  <li>
+    <a
+      href="https://app.haikei.app/"
+      target="_blank"
+      rel="noopener noreferrer nofollow">https://app.haikei.app/</a>
+  </li>
 </ul>
 
 <h3>Create a digram of the database</h3>
 
 <ul>
-<li><a href="https://dbdiagram.io/" target="_blank" rel="noopener noreferrer nofollow">https://dbdiagram.io/</a></li>
+  <li>
+    <a
+      href="https://dbdiagram.io/"
+      target="_blank"
+      rel="noopener noreferrer nofollow">https://dbdiagram.io/</a>
+  </li>
 </ul>
 
 <h3>Publish package to npm</h3>
 
 <ul>
-<li><a href="https://www.npmjs.com/package/np" target="_blank" rel="noopener noreferrer nofollow">https://www.npmjs.com/package/np</a></li>
+  <li>
+    <a
+      href="https://www.npmjs.com/package/np"
+      target="_blank"
+      rel="noopener noreferrer nofollow">https://www.npmjs.com/package/np</a>
+  </li>
 </ul>
 
 <h3>Quick designed components</h3>
 
 <ul>
-<li><a href="https://m3.material.io/" target="_blank" rel="noopener noreferrer nofollow">https://m3.material.io/</a></li>
+  <li>
+    <a
+      href="https://m3.material.io/"
+      target="_blank"
+      rel="noopener noreferrer nofollow">https://m3.material.io/</a>
+  </li>
 </ul>
-</code></pre>
