@@ -1,21 +1,21 @@
 # portfolio
 
 [Live Url](https://sboonny.vercel.app/)
- 
+
 ## Performance answers
 
 To expose garbage collector
 
 ```ts
-import { setFlagsFromString } from 'v8';
-import { runInNewContext } from 'vm';
-setFlagFromString('--expose_gc');
-const gc = runInNewContext('gc');
+import { setFlagsFromString } from "v8";
+import { runInNewContext } from "vm";
+setFlagFromString("--expose_gc");
+const gc = runInNewContext("gc");
 ```
 
 ## library of answers, I found
 
-**Type Helpers
+\*\*Type Helpers
 
 - Combine woods
 
@@ -31,15 +31,13 @@ type Combine<T1, T2> = Prettify<
 >;
 ```
 
-
-
 **Git**:
 
 - Setting a function to true `git config --global core.fsmonitor true`
 - Exit the credential-cache, as password is probably cached in there `git credential-cache exit`
 - https://git-scm.com/docs/git-reflog, to pick list of commits
 - Merge conflict git commands, https://stackoverflow.com/questions/5308816/how-can-i-merge-multiple-commits-onto-another-branch-as-a-single-squashed-commit
-   
+
 ```console
 git branch -m backup-feature
 git switch <target-branch>
@@ -66,20 +64,19 @@ git checkout upstream/main -- pnpm-lock.yaml
 To test the component fault tolerance
 
 ```ts
-  // What happens if I messed up here? Let's find out!
-  throw new Error("oops, I made a mistake!")
+// What happens if I messed up here? Let's find out!
+throw new Error("oops, I made a mistake!");
 ```
 
 **Regex**:
 
 For links with these format, `[hexadecimal numbers here](https://www.freecodecamp.org/news/hexadecimal-number-system/)` regex `/\[(.*?)\]\((.*?)\)/gm` should target them and `<a href="$2"target="_blank" rel="noopener noreferrer nofollow">$1</a>` will swap them into `<a href="https://www.freecodecamp.org/news/hexadecimal-number-system/"target="_blank" rel="noopener noreferrer nofollow">hexadecimal numbers here</a>`
 
-
 **Scraping**:
 
 - https://cheerio.js.org/
 - https://axios-http.com/
-  
+
 ---
 
 To create charts use `flowchart`
@@ -125,7 +122,7 @@ running `npx npkill` will cleare node-modules files in the system
 - https://icons8.com/icons
 - https://icones.js.org/
 
-### fonts 
+### fonts
 
 - https://fonts.google.com/
 - http://velvetyne.fr/
@@ -137,7 +134,7 @@ running `npx npkill` will cleare node-modules files in the system
 - https://mixkit.co/
 - https://coverr.co/
 
-### Designtools 
+### Designtools
 
 - https://express.adobe.com/sp/
 - https://coolors.co/
@@ -162,6 +159,6 @@ running `npx npkill` will cleare node-modules files in the system
 
 - https://www.npmjs.com/package/np
 
-### Quick designed components 
+### Quick designed components
 
 - https://m3.material.io/
