@@ -1,0 +1,24 @@
+---
+interface Props {
+  expanded: boolean;
+}
+
+const { expanded } = Astro.props;
+---
+
+<header>
+  <button>
+    <span class="sr-only" aria-expanded={expanded} role="button">Menu</span>
+  </button>
+  <nav>
+    <ul
+      id="primary-navigation"
+      data-visible={expanded}
+      class="primary-navigation underline-indicators flex"
+    >
+      <li>
+        <a href="pages/loa"><span aria-hidden="true">01</span>LOA</a>
+      </li>
+    </ul>
+  </nav>
+</header>
