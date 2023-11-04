@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue,svg}"],
+  content: ["./src/**/*.{astro,html,js,jsx,md,mdx,ts,tsx,svg}"],
   theme: {
     extend: {
       colors: {
@@ -12,17 +12,10 @@ module.exports = {
       typography: (theme) => ({
         DEFAULT: {
           css: {
-            blockquote: { "border-color": "rgb(39 39 42 / 5)" },
             "blockquote p:first-of-type::before": { content: "none" },
             "blockquote p:first-of-type::after": { content: "none" },
             "ul > li::marker": {
-              color: "#27272a",
               fontWeight: "600",
-            },
-            color: "#27272a",
-            pre: {
-              color: "rgb(39 39 42 / 5)",
-              backgroundColor: "rgb(39 39 42 / 5)",
             },
             "pre code::before": {
               "padding-left": "unset",
@@ -31,8 +24,6 @@ module.exports = {
               "padding-right": "unset",
             },
             code: {
-              backgroundColor: "rgb(39 39 42 / 0.1)",
-              color: "#DD1144",
               fontWeight: "400",
               "border-radius": "0.25rem",
             },
@@ -45,7 +36,6 @@ module.exports = {
               "padding-right": "0.25rem",
             },
             a: {
-              color: "#1F11E4",
               textDecoration: `none`,
               "&:hover": {
                 textDecoration: `underline`,
