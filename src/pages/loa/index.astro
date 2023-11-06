@@ -1,23 +1,23 @@
-<h1 id="main-content">This is a quick personal notes, to remind me.</h1>
+<h1 id="main-content" class="mb-4 text-4xl font-bold">
+  This is a quick personal notes for me.
+</h1>
 
-<h2>Performance answers</h2>
+<h2 class="mb-2 text-2xl font-bold">Performance answers</h2>
 
-<p>To expose garbage collector</p>
+<p class="mb-2">To expose garbage collector</p>
 
-<pre><code class="language-ts">
-    {`
+<pre><code class="language-ts">{`
 import { setFlagsFromString } from "v8";
 import { runInNewContext } from "vm";
 setFlagFromString("--expose_gc");
 const gc = runInNewContext("gc");
-`}
-</code></pre>
+`}</code></pre>
 
-<h2>library of answers, I found</h2>
+<h2 class="mt-4 mb-2 text-2xl font-bold">library of answers, I found</h2>
 
-<p><strong>Type Helpers</strong></p>
+<p class="mb-2">Type Helpers</p>
 
-<ul>
+<ul class="mb-2 list-inside list-disc">
   <li>Combine woods</li>
 </ul>
 
@@ -33,9 +33,9 @@ type Combine<T1, T2> = Prettify<
 >;`}
 </code></pre>
 
-<p><strong>Git:</strong></p>
+<p class="mb-2">Git:</p>
 
-<ul>
+<ul class="mb-2 list-inside list-disc">
   <li>
     Setting a function to true <code
       >git config --global core.fsmonitor true</code
@@ -71,7 +71,7 @@ git merge --squash backup-feature
 git commit -m "feat: new feature!"
 </code></pre>
 
-<ul>
+<ul class="mb-2 list-inside list-disc">
   <li>Rebase PR, if merge isn't a valid option</li>
 </ul>
 
@@ -80,7 +80,7 @@ git fetch upstream
 git rebase -i upstream/main
 </code></pre>
 
-<ul>
+<ul class="mb-2 list-inside list-disc">
   <li>Conflict in package lock you can run:</li>
 </ul>
 
@@ -90,16 +90,16 @@ git checkout upstream/main -- package.json
 git checkout upstream/main -- pnpm-lock.yaml
 </code></pre>
 
-<p>To test the component fault tolerance</p>
+<p class="mb-2">To test the component fault tolerance</p>
 
 <pre><code class="language-ts">
 // What happens if I messed up here? Let's find out!
 throw new Error("oops, I made a mistake!");
 </code></pre>
 
-<p><strong>Regex:</strong></p>
+<p class="mb-2">Regex:</p>
 
-<p>
+<p class="mb-2">
   For links with these format, <code>hexadecimal numbers here</code> regex <code
     >/\[(.*?)\]\((.*?)\)/gm</code
   > should target them and <code
@@ -110,299 +110,325 @@ throw new Error("oops, I made a mistake!");
       href="https://www.freecodecamp.org/news/hexadecimal-number-system/"
       target="_blank"
       rel="noopener noreferrer nofollow">hexadecimal numbers here</a
-    ></code>
+    ></code
+  >
 </p>
 
-<p><strong>Scraping:</strong></p>
+<p class="mb-2">Scraping:</p>
 
-<ul>
+<ul class="mb-2 list-inside list-disc">
   <li>
     <a
       href="https://cheerio.js.org/"
       target="_blank"
-      rel="noopener noreferrer nofollow">https://cheerio.js.org/</a>
+      rel="noopener noreferrer nofollow">https://cheerio.js.org/</a
+    >
   </li>
   <li>
     <a
       href="https://axios-http.com/"
       target="_blank"
-      rel="noopener noreferrer nofollow">https://axios-http.com/</a>
+      rel="noopener noreferrer nofollow">https://axios-http.com/</a
+    >
   </li>
 </ul>
 
-<hr />
+<hr class="my-4" />
 
-<p>To create charts use <code>flowchart</code></p>
+<p class="mb-2">To create charts use <code>flowchart</code></p>
 
-<hr />
+<hr class="my-4" />
 
-<p>Node/npm</p>
+<p class="mb-2">Node/npm</p>
 
-<p>
+<p class="mb-2">
   running <code>npx npkill</code> will cleare node-modules files in the system
 </p>
 
-<h2>Links to Services, I use a lot</h2>
+<h2 class="mb-2 text-2xl font-bold">Links to Services, I use a lot</h2>
 
-<h3>FrontEnd Client side</h3>
+<h3 class="mb-2 text-xl font-bold">FrontEnd Client side</h3>
 
-<ul>
-  <li>
-    For frontend session replays <a
-      href="https://www.highlight.io/"
-      target="_blank"
-      rel="noopener noreferrer nofollow">https://www.highlight.io/</a>
-  </li>
-</ul>
+<p class="mb-2">
+  For frontend session replays <a
+    href="https://www.highlight.io/"
+    target="_blank"
+    rel="noopener noreferrer nofollow">https://www.highlight.io/</a
+  >
+</p>
 
-<h3>BackEnd Queries side</h3>
+<h3 class="mb-2 text-xl font-bold">BackEnd Queries side</h3>
 
-<ul>
+<ul class="mb-2 list-inside list-disc">
   <li>
     For backend error handling <a
       href="https://www.axiom.co/"
       target="_blank"
-      rel="noopener noreferrer nofollow">https://www.axiom.co/</a>
+      rel="noopener noreferrer nofollow">https://www.axiom.co/</a
+    >
   </li>
   <li>
     Making backend queries easier <a
       href="https://github.com/trpc/trpc"
       target="_blank"
-      rel="noopener noreferrer nofollow">https://github.com/trpc/trpc</a>
+      rel="noopener noreferrer nofollow">https://github.com/trpc/trpc</a
+    >
   </li>
 </ul>
 
-<h3>CSS generators</h3>
+<h3 class="mb-2 text-xl font-bold">CSS generators</h3>
 
-<ul>
+<ul class="mb-2 list-inside list-disc">
   <li>
     <a
       href="https://www.joshwcomeau.com/shadow-palette/"
       target="_blank"
       rel="noopener noreferrer nofollow"
-      >https://www.joshwcomeau.com/shadow-palette/</a>
+      >https://www.joshwcomeau.com/shadow-palette/</a
+    >
   </li>
   <li>
     <a
       href="https://realfavicongenerator.net/"
       target="_blank"
-      rel="noopener noreferrer nofollow">https://realfavicongenerator.net/</a>
+      rel="noopener noreferrer nofollow">https://realfavicongenerator.net/</a
+    >
   </li>
 </ul>
 
-<h3>Stock Images</h3>
+<h3 class="mb-2 text-xl font-bold">Stock Images</h3>
 
-<ul>
+<ul class="mb-2 list-inside list-disc">
   <li>
     <a
       href="https://www.pexels.com/"
       target="_blank"
-      rel="noopener noreferrer nofollow">https://www.pexels.com/</a>
+      rel="noopener noreferrer nofollow">https://www.pexels.com/</a
+    >
   </li>
   <li>
     <a
       href="https://unsplash.com/"
       target="_blank"
-      rel="noopener noreferrer nofollow">https://unsplash.com/</a>
+      rel="noopener noreferrer nofollow">https://unsplash.com/</a
+    >
   </li>
   <li>
     <a
       href="https://stocksnap.io/"
       target="_blank"
-      rel="noopener noreferrer nofollow">https://stocksnap.io/</a>
+      rel="noopener noreferrer nofollow">https://stocksnap.io/</a
+    >
   </li>
 </ul>
 
-<h3>Illustrations</h3>
+<h3 class="mb-2 text-xl font-bold">Illustrations</h3>
 
-<ul>
+<ul class="mb-2 list-inside list-disc">
   <li>
     <a
       href="https://undraw.co/illustrations"
       target="_blank"
-      rel="noopener noreferrer nofollow">https://undraw.co/illustrations</a>
+      rel="noopener noreferrer nofollow">https://undraw.co/illustrations</a
+    >
   </li>
   <li>
     <a
       href="https://www.openpeeps.com/"
       target="_blank"
-      rel="noopener noreferrer nofollow">https://www.openpeeps.com/</a>
+      rel="noopener noreferrer nofollow">https://www.openpeeps.com/</a
+    >
   </li>
   <li>
     <a
       href="https://storytale.io/"
       target="_blank"
-      rel="noopener noreferrer nofollow">https://storytale.io/</a>
+      rel="noopener noreferrer nofollow">https://storytale.io/</a
+    >
   </li>
 </ul>
 
-<h3>icons</h3>
+<h3 class="mb-2 text-xl font-bold">icons</h3>
 
-<ul>
+<ul class="mb-2 list-inside list-disc">
   <li>
     <a
       href="https://thenounproject.com/"
       target="_blank"
-      rel="noopener noreferrer nofollow">https://thenounproject.com/</a>
+      rel="noopener noreferrer nofollow">https://thenounproject.com/</a
+    >
   </li>
   <li>
     <a
       href="https://simpleicons.org/"
       target="_blank"
-      rel="noopener noreferrer nofollow">https://simpleicons.org/</a>
+      rel="noopener noreferrer nofollow">https://simpleicons.org/</a
+    >
   </li>
   <li>
     <a
       href="https://icons8.com/icons"
       target="_blank"
-      rel="noopener noreferrer nofollow">https://icons8.com/icons</a>
+      rel="noopener noreferrer nofollow">https://icons8.com/icons</a
+    >
   </li>
   <li>
     <a
       href="https://icones.js.org/"
       target="_blank"
-      rel="noopener noreferrer nofollow">https://icones.js.org/</a>
+      rel="noopener noreferrer nofollow">https://icones.js.org/</a
+    >
   </li>
 </ul>
 
-<h3>fonts</h3>
+<h3 class="mb-2 text-xl font-bold">fonts</h3>
 
-<ul>
+<ul class="mb-2 list-inside list-disc">
   <li>
     <a
       href="https://fonts.google.com/"
       target="_blank"
-      rel="noopener noreferrer nofollow">https://fonts.google.com/</a>
+      rel="noopener noreferrer nofollow">https://fonts.google.com/</a
+    >
   </li>
   <li>
     <a
       href="http://velvetyne.fr/"
       target="_blank"
-      rel="noopener noreferrer nofollow">http://velvetyne.fr/</a>
+      rel="noopener noreferrer nofollow">http://velvetyne.fr/</a
+    >
   </li>
   <li>
     <a
       href="https://www.losttype.com/"
       target="_blank"
-      rel="noopener noreferrer nofollow">https://www.losttype.com/</a>
+      rel="noopener noreferrer nofollow">https://www.losttype.com/</a
+    >
   </li>
 </ul>
 
-<h3>Videos</h3>
+<h3 class="mb-2 text-xl font-bold">Videos</h3>
 
-<ul>
+<ul class="mb-2 list-inside list-disc">
   <li>
     <a
       href="https://www.pexels.com/videos"
       target="_blank"
-      rel="noopener noreferrer nofollow">https://www.pexels.com/videos</a>
+      rel="noopener noreferrer nofollow">https://www.pexels.com/videos</a
+    >
   </li>
   <li>
     <a
       href="https://mixkit.co/"
       target="_blank"
-      rel="noopener noreferrer nofollow">https://mixkit.co/</a>
+      rel="noopener noreferrer nofollow">https://mixkit.co/</a
+    >
   </li>
   <li>
     <a
       href="https://coverr.co/"
       target="_blank"
-      rel="noopener noreferrer nofollow">https://coverr.co/</a>
+      rel="noopener noreferrer nofollow">https://coverr.co/</a
+    >
   </li>
 </ul>
 
-<h3>Designtools</h3>
+<h3 class="mb-2 text-xl font-bold">Designtools</h3>
 
-<ul>
+<ul class="mb-2 list-inside list-disc">
   <li>
     <a
       href="https://express.adobe.com/sp/"
       target="_blank"
-      rel="noopener noreferrer nofollow">https://express.adobe.com/sp/</a>
+      rel="noopener noreferrer nofollow">https://express.adobe.com/sp/</a
+    >
   </li>
   <li>
     <a
       href="https://coolors.co/"
       target="_blank"
-      rel="noopener noreferrer nofollow">https://coolors.co/</a>
+      rel="noopener noreferrer nofollow">https://coolors.co/</a
+    >
   </li>
   <li>
     <a
       href="https://fontjoy.com/"
       target="_blank"
-      rel="noopener noreferrer nofollow">https://fontjoy.com/</a>
+      rel="noopener noreferrer nofollow">https://fontjoy.com/</a
+    >
   </li>
   <li>
     <a
       href="https://type-scale.com/"
       target="_blank"
-      rel="noopener noreferrer nofollow">https://type-scale.com/</a>
+      rel="noopener noreferrer nofollow">https://type-scale.com/</a
+    >
   </li>
   <li>
     <a
       href="https://www.canva.com/en_gb/"
       target="_blank"
-      rel="noopener noreferrer nofollow">https://www.canva.com/en_gb/</a>
+      rel="noopener noreferrer nofollow">https://www.canva.com/en_gb/</a
+    >
   </li>
 </ul>
 
-<h3>Transform code snippets</h3>
+<h3 class="mb-2 text-xl font-bold">Transform code snippets</h3>
 
-<ul>
-  <li>
-    <a
-      href="https://transform.tools/"
-      target="_blank"
-      rel="noopener noreferrer nofollow">https://transform.tools/</a>
-  </li>
-</ul>
+<a
+  class="mb-2"
+  href="https://transform.tools/"
+  target="_blank"
+  rel="noopener noreferrer nofollow">https://transform.tools/</a
+>
 
-<h3>Create unique designs for unique situations</h3>
+<h3 class="mb-2 text-xl font-bold">
+  Create unique designs for unique situations
+</h3>
 
-<ul>
+<ul class="mb-2 list-inside list-disc">
   <li>
     <a
       href="https://www.shapedivider.app/"
       target="_blank"
-      rel="noopener noreferrer nofollow">https://www.shapedivider.app/</a>
+      rel="noopener noreferrer nofollow">https://www.shapedivider.app/</a
+    >
   </li>
   <li>
     <a
       href="https://app.haikei.app/"
       target="_blank"
-      rel="noopener noreferrer nofollow">https://app.haikei.app/</a>
+      rel="noopener noreferrer nofollow">https://app.haikei.app/</a
+    >
   </li>
 </ul>
 
-<h3>Create a digram of the database</h3>
+<h3 class="mb-2 text-xl font-bold">Create a digram of the database</h3>
 
-<ul>
-  <li>
-    <a
-      href="https://dbdiagram.io/"
-      target="_blank"
-      rel="noopener noreferrer nofollow">https://dbdiagram.io/</a>
-  </li>
-</ul>
+<p class="mb-2">
+  <a
+    href="https://dbdiagram.io/"
+    target="_blank"
+    rel="noopener noreferrer nofollow">https://dbdiagram.io/</a
+  >
+</p>
 
-<h3>Publish package to npm</h3>
+<h3 class="mb-2 text-xl font-bold">Publish package to npm</h3>
 
-<ul>
-  <li>
-    <a
-      href="https://www.npmjs.com/package/np"
-      target="_blank"
-      rel="noopener noreferrer nofollow">https://www.npmjs.com/package/np</a>
-  </li>
-</ul>
+<p class="mb-2">
+  <a
+    href="https://www.npmjs.com/package/np"
+    target="_blank"
+    rel="noopener noreferrer nofollow">https://www.npmjs.com/package/np</a
+  >
+</p>
 
-<h3>Quick designed components</h3>
+<h3 class="mb-2 text-xl font-bold">Quick designed components</h3>
 
-<ul>
-  <li>
-    <a
-      href="https://m3.material.io/"
-      target="_blank"
-      rel="noopener noreferrer nofollow">https://m3.material.io/</a>
-  </li>
-</ul>
+<p class="mb-2">
+  <a
+    href="https://m3.material.io/"
+    target="_blank"
+    rel="noopener noreferrer nofollow">https://m3.material.io/</a
+  >
+</p>
