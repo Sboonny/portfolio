@@ -16,26 +16,12 @@ const { title } = Astro.props;
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
   </head>
-  <body class="bg-green-300 text-blue-950">
+  <body class="bg-gray-100">
     <a
       class="absolute z-50 mx-auto -translate-y-10 bg-green-400 px-4 py-2 focus:translate-y-0"
       href="#main-content">Skip to content</a
     >
-    <header>
-      <nav>
-        <ul
-          id="primary-navigation"
-        >
-          <li>
-            <a href="./loa">LOA</a>
-          </li>
-          <li>
-            <a href="./contact">Contact</a>
-          </li>
-        </ul>
-      </nav>
-    </header>    
-    <main class="mx-10">
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <slot />
     </main>
   </body>
