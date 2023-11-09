@@ -1,12 +1,12 @@
 ---
-import ThemeIcon from "../../components/ThemeIcon.astro";
+import Header from "../../components/Header.astro";
 import Layout from "../../layouts/Layout.astro";
 
 const posts = await Astro.glob("./posts/*.md");
 ---
 
 <Layout title="Sboonny | blog">
-  <ThemeIcon />
+  <Header />
   {
     posts.map((post) => (
       <article>

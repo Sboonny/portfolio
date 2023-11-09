@@ -1,0 +1,28 @@
+---
+import ThemeIcon from "./ThemeIcon.astro";
+---
+
+<nav class="bg-gray-800">
+  <div class="flex mx-10 sm:mx-5 gap-3">
+    <ul
+      class="flex flex-1 gap-4 items-center justify-center py-4 sm:items-stretch sm:justify-start"
+    >
+      <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+      <li>
+        <a
+          href="/"
+          class="rounded-md bg-gray-900 px-3 py-2 font-medium text-white"
+          aria-current="page">Home</a
+        >
+      </li>
+      <li>
+        <a
+          href="/blog"
+          class="rounded-md px-3 py-2 font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
+          >Blog</a
+        >
+      </li>
+    </ul>
+    <ThemeIcon />
+  </div>
+</nav>
