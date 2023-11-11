@@ -1,0 +1,13 @@
+---
+import Header from "../../components/Header.astro";
+import Layout from "../../layouts/Layout.astro";
+
+const posts = await Astro.glob("./posts/*.md");
+---
+
+<Layout title="Sboonny | blog">
+  <Header />
+  <h1>This is a section of projects I contributed to.</h1>
+  <p>I have been enthusiastic about contributing to opensource, here are the projects I have contributed to.</p>
+
+</Layout>
