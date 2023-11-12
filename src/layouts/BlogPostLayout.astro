@@ -14,10 +14,12 @@ const { frontmatter } = Astro.props;
     <meta name="generator" content={Astro.generator} />
     <title>{frontmatter.title}</title>
   </head>
+  <Header />
   <body class="bg-gray-100 dark:bg-gray-900 dark:text-gray-100">
-    <Header />
-    <h1>{frontmatter.title}</h1>
-    <p>{frontmatter.description}</p>
-    <slot />
+    <main class="porse lg:prose-lg my-10 mx-auto max-w-3xl">
+      <h1 class="lg:text-3xl">{frontmatter.title}</h1>
+      <p class="border-b-2">{frontmatter.description}</p>
+      <slot />
+    </main>
   </body>
 </html>
