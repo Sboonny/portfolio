@@ -1,9 +1,23 @@
 ---
+import Header from "../components/Header.astro";
+
 const { frontmatter } = Astro.props;
 ---
 
-<html>
-  <h1>{frontmatter.title}</h1>
-  <p>{frontmatter.description}</p>
-  <slot />
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content={frontmatter.description} />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{frontmatter.title}</title>
+  </head>
+  <body class="bg-gray-100 dark:bg-gray-900 dark:text-gray-100">
+    <Header />
+    <h1>{frontmatter.title}</h1>
+    <p>{frontmatter.description}</p>
+    <slot />
+  </body>
 </html>
