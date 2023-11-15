@@ -6,7 +6,7 @@ import Header from "../components/Header.astro";
 
 <Layout title="Sboonny Portfolio | Home">
   <Header />
-  <main class="mx-auto mt-8 max-w-7xl px-4 sm:px-6 lg:px-8">
+  <main class="prose mx-auto mt-8 max-w-7xl px-4 sm:px-6 lg:px-8">
     <h1 class="text-3xl font-bold text-gray-900 dark:text-gray-100">
       Hi, I am Muhammed Mustafa.
     </h1>
@@ -17,22 +17,22 @@ import Header from "../components/Header.astro";
     </p>
 
     <section>
-      <h2>About</h2>
+      <h2 class="dark:text-gray-100">About</h2>
       <p>
         I have always wanted to be a programmer, but whatever tools or course I
         used to learn programming, end with my disappointment. Tried to focus on
         business to earn living, but who known that my interaction with business
         will guide me to <a
-          class="dark:text-gray-100 text-gray-900 font-bold"
+          class="font-bold text-gray-900 dark:text-gray-100 transition-[border-color] border-b border-gray-400 hover:border-gray-50 rounded-sm hover:no-underline"
           href="https://www.youtube.com/watch?v=Hp1INWuXIgo&pp=ygUaY29mZmVlemlsbGEgZnJlZSBjb2RlIGNhbXA%3D"
           rel="noreferrer noopener"
           target="_blank">freeCodeCamp</a
         >.
       </p>
     </section>
-    <div class="relative">
-      <span>2022-SEP 2023</span><a
-        class="dark:text-gray-100 text-gray-900 font-bold"
+    <div class="relative grid">
+      <span class="opacity-80 text-stone-700 dark:text-stone-300 after:text-gray-100  after:w-full">2022-SEP 2023</span><a
+        class="font-bold text-gray-900 dark:text-gray-100 transition-[border-color] border-b border-gray-400 hover:border-gray-50 rounded-sm hover:no-underline"
         href="https://www.freecodecamp.org/"
         target="_blank"
         rel="noopener noreferrer">Frontend Dev - freeCodeCamp</a
@@ -48,12 +48,12 @@ import Header from "../components/Header.astro";
       </h2>
 
       <div class="bg-gray-700 p-5 shadow-lg">
-        <a href="" class="rounded-md text-gray-300 shadow-sm dark:text-gray-100"
-          ><span class="sr-only">Check</span>Chapter
-        </a>
-
         <p class="text-gray-300">
-          I was lucky to have worked in chapter with awesome collages, and
+          <a
+            href=""
+            class="transition-[border-color] border-b border-gray-400 hover:border-gray-50 rounded-sm hover:no-underline text-gray-300 hover:text-gray-400 dark:text-gray-100"
+            >Chapter</a
+          >, I was lucky to have worked in chapter with awesome collages, and
           talented individuals who contributed to that codebase.
         </p>
 
@@ -66,13 +66,13 @@ import Header from "../components/Header.astro";
       </div>
 
       <div class="bg-gray-700 p-5 shadow-lg">
-        <a href="" class="rounded-md text-gray-300 shadow-sm dark:text-gray-100"
-          ><span class="sr-only">Check</span>freeCodeCamp
-        </a>
-
         <p class="text-gray-300">
-          I contributed to freeCodeCamp, an open source community that helps you
-          learn to code, build projects, and earn certifications.
+          <a
+            href=""
+            class="text-gray-300 hover:text-gray-400 dark:text-gray-100 transition-[border-color] border-b border-gray-400 hover:border-gray-50 rounded-sm hover:no-underline"
+            >freeCodeCamp</a
+          >, an open source community that helps you learn to code, build
+          projects, and earn certifications.
         </p>
 
         <details class="text-purple-200">
@@ -85,14 +85,53 @@ import Header from "../components/Header.astro";
       </div>
 
       <ul>
-        <li>Worked on <a href="https://github.com/freeCodeCamp/chapter/pull/2301" target="_blank" rel="noopener noreferrer">implementing search function</a> using React `useState` as state management.</li>
-        <li>Paired on fixing loading of the data bug in the homepage, and <a href="https://github.com/freeCodeCamp/chapter/pull/2340" target="_blank" rel="noopener noreferrer">removed the extra query</a>.</li>
-        <li>Worked on making chapter responsive, you can check it by running a <a href="https://gitpod.io/#https://github.com/freeCodeCamp/chapter" target="_blank" rel="noopener noreferrer">Gitpod</a> instance.</li>
-        <li>Worked on <a href="https://github.com/freeCodeCamp/freeCodeCamp/pull/50286" rel="noopener noreferrer">Restful API, and implemented test</a> for it.</li>
-        <li>Helped freeCodeCamp issue by implementing <a href="https://github.com/freeCodeCamp/freeCodeCamp/pulls?q=is%3Apr+author%3ASboonny+is%3Aclosed+">small pull requests</a> that solves issue in small steps.</li>
-        <li>Helped with rewrite of the old API to a <a href="https://github.com/freeCodeCamp/freeCodeCamp/pulls?q=is%3Apr+label%3A%22platform%3A+api%22+author%3ASboonny+is%3Aclosed" target="_blank" rel="noopener noreferrer">Fastify</a> based one.</li>
+        <li>
+          Worked on <a
+          class="text-gray-300 hover:text-gray-400 dark:text-gray-100 transition-[border-color] border-b border-gray-400 hover:border-gray-50 rounded-sm hover:no-underline"
+            href="https://github.com/freeCodeCamp/chapter/pull/2301"
+            target="_blank"
+            rel="noopener noreferrer">implementing search function</a
+          > using React `useState` as state management.
+        </li>
+        <li>
+          Paired on fixing loading of the data bug in the homepage, and <a
+          class="text-gray-300 hover:text-gray-400 dark:text-gray-100 transition-[border-color] border-b border-gray-400 hover:border-gray-50 rounded-sm hover:no-underline"
+            href="https://github.com/freeCodeCamp/chapter/pull/2340"
+            target="_blank"
+            rel="noopener noreferrer">removed the extra query</a
+          >.
+        </li>
+        <li>
+          Worked on making chapter responsive, you can check it by running a <a
+          class="text-gray-300 hover:text-gray-400 dark:text-gray-100 transition-[border-color] border-b border-gray-400 hover:border-gray-50 rounded-sm hover:no-underline"
+            href="https://gitpod.io/#https://github.com/freeCodeCamp/chapter"
+            target="_blank"
+            rel="noopener noreferrer">Gitpod</a
+          > instance.
+        </li>
+        <li>
+          Worked on <a
+          class="text-gray-300 hover:text-gray-400 dark:text-gray-100 transition-[border-color] border-b border-gray-400 hover:border-gray-50 rounded-sm hover:no-underline"
+            href="https://github.com/freeCodeCamp/freeCodeCamp/pull/50286"
+            rel="noopener noreferrer">Restful API, and implemented test</a
+          > for it.
+        </li>
+        <li>
+          Helped freeCodeCamp issue by implementing <a
+          class="text-gray-300 hover:text-gray-400 dark:text-gray-100 transition-[border-color] border-b border-gray-400 hover:border-gray-50 rounded-sm hover:no-underline"
+            href="https://github.com/freeCodeCamp/freeCodeCamp/pulls?q=is%3Apr+author%3ASboonny+is%3Aclosed+"
+            >small pull requests</a
+          > that solves issue in small steps.
+        </li>
+        <li>
+          Helped with rewrite of the old API to a <a
+          class="text-gray-300 hover:text-gray-400 dark:text-gray-100 transition-[border-color] border-b border-gray-400 hover:border-gray-50 rounded-sm hover:no-underline"
+            href="https://github.com/freeCodeCamp/freeCodeCamp/pulls?q=is%3Apr+label%3A%22platform%3A+api%22+author%3ASboonny+is%3Aclosed"
+            target="_blank"
+            rel="noopener noreferrer">Fastify</a
+          > based one.
+        </li>
       </ul>
-
     </section>
   </main>
 </Layout>
