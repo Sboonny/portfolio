@@ -2,6 +2,7 @@
 import "../styles/global.css";
 import Layout from "../layouts/Layout.astro";
 import Header from "../components/Header.astro";
+import Tags from "../components/Tags.astro";
 ---
 
 <Layout title="Sboonny Portfolio | Home">
@@ -9,7 +10,9 @@ import Header from "../components/Header.astro";
   <main
     class="prose mx-auto mt-8 max-w-7xl px-4 text-slate-800 dark:text-slate-400 sm:px-6 lg:px-8"
   >
-    <h1 class="text-3xl font-bold text-slate-900 dark:text-slate-100">Sboonny</h1>
+    <h1 class="text-3xl font-bold text-slate-900 dark:text-slate-100">
+      Sboonny
+    </h1>
     <p class="mt-4 text-lg">
       A front end Developer who enjoys contributing to open source projects. I
       work mainly with <span class="font-bold text-blue-600">TypeScript</span>
@@ -30,9 +33,11 @@ import Header from "../components/Header.astro";
         >.
       </p>
     </section>
-    <div class="relative flex gap-2 hover:shadow-sm p-3 hover:bg-slate-200 hover:bg-opacity-10">
+    <div
+      class="relative flex gap-2 p-3 hover:bg-slate-200 hover:bg-opacity-10 hover:shadow-sm"
+    >
       <span
-        class="text-stone-700 opacity-80 after:w-full after:text-slate-100 dark:text-stone-300 lg:w-28 w-40 break-keep"
+        class="w-40 break-keep text-stone-700 opacity-80 after:w-full after:text-slate-100 dark:text-stone-300 lg:w-28"
         >2022-SEP 2023</span
       >
       <div>
@@ -54,21 +59,26 @@ import Header from "../components/Header.astro";
       </h2>
 
       <div class="bg-slate-700 p-5 shadow-lg">
+        <a
+          href=""
+          class="rounded-sm border-b border-slate-400 text-slate-300 transition-[border-color] hover:border-slate-600 hover:text-slate-400 hover:no-underline dark:text-slate-100 dark:hover:border-slate-50"
+          >Chapter</a
+        >
         <p class="text-slate-300">
-          <a
-            href=""
-            class="rounded-sm border-b border-slate-400 text-slate-300 transition-[border-color] hover:border-slate-600 hover:text-slate-400 hover:no-underline dark:text-slate-100 dark:hover:border-slate-50"
-            >Chapter</a
-          >, I was lucky to have worked in chapter with awesome collages, and
+          I was lucky to have worked in chapter with awesome collages, and
           talented individuals who contributed to that codebase.
         </p>
-
-        <details class="text-purple-200">
-          <summary>About</summary>
-           Chapter was an attempt to build a meet up platform, that you can
-          self-host through a Docker container Docker and deploy to the cloud
-          with a one-click and then configured. No coding required.
-        </details>
+        <Tags
+          tags={[
+            "TypeScript",
+            "NextJS",
+            "React",
+            "Prisma",
+            "Chakra UI",
+            "GraphQL",
+            "Apollo",
+          ]}
+        />
       </div>
 
       <div class="bg-slate-700 p-5 shadow-lg">
@@ -80,14 +90,6 @@ import Header from "../components/Header.astro";
           >, an open source community that helps you learn to code, build
           projects, and earn certifications.
         </p>
-
-        <details class="text-purple-200">
-          <summary>About</summary>
-           freeCodeCamp is a non-profit organization that consists of an
-          interactive learning web platform, an online community forum, chat
-          rooms, Medium publications, and local organizations that intend to
-          make learning web development accessible to anyone.
-        </details>
       </div>
 
       <ul>
@@ -140,10 +142,12 @@ import Header from "../components/Header.astro";
       </ul>
     </section>
     <section>
-      <h2 class="text-slate-900 dark:text-slate-100">Project I like, and have contributed to</h2>
+      <h2 class="text-slate-900 dark:text-slate-100">
+        Project I like, and have contributed to
+      </h2>
 
       <div>
-        <h3 class="text-slate-900 dark:text-slate-100">Create T3 App</h2>
+        <h3 class="text-slate-900 dark:text-slate-100">Create T3 App</h3>
         <p>
           I like this project, because of how easy it makes my life, when
           creating a quick project for my friends or in freelance projects.
