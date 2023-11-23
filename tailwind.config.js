@@ -4,12 +4,6 @@ module.exports = {
   darkMode: 'class',
   theme: {
     extend: {
-      colors: {
-        transparent: "transparent",
-        current: "currentColor",
-        black: "#27272a",
-        white: "#F4F4F5",
-      },
       typography: (theme) => ({
         DEFAULT: {
           css: {
