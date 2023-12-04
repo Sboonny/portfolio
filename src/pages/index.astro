@@ -8,9 +8,9 @@ import ThemeIcon from "../components/ThemeIcon.astro";
 <Layout title="Sboonny Portfolio | Home">
   <ThemeIcon />
   <main
-    class="prose mx-auto mt-8 max-w-7xl px-4 text-slate-800 dark:text-slate-400 sm:px-6 lg:px-8"
+    class="prose prose-heading:text-slate-900 prose-headings:dark:text-slate-100 mx-auto mt-8 max-w-7xl px-4 text-slate-800 dark:text-slate-400 sm:px-6 lg:px-8"
   >
-    <h1 class="text-3xl font-bold text-slate-900 dark:text-slate-100">
+    <h1 class="text-3xl font-bold">
       Sboonny
     </h1>
     <p class="mt-4 text-lg">
@@ -20,7 +20,7 @@ import ThemeIcon from "../components/ThemeIcon.astro";
     </p>
 
     <section>
-      <h2 class="dark:text-slate-100">About</h2>
+      <h2>About</h2>
       <p>
         I have always wanted to be a programmer, but whatever tools or course I
         used to learn programming, end with my disappointment. Tried to focus on
@@ -54,7 +54,7 @@ import ThemeIcon from "../components/ThemeIcon.astro";
       </div>
     </div>
     <section>
-      <h2 class="my-12 text-2xl font-bold text-slate-900 dark:text-slate-100">
+      <h2 class="my-12 text-2xl font-bold">
         Projects that I worked on with others 🤝.
       </h2>
       <div class="grid gap-3 grid-cols-fit">
@@ -103,6 +103,7 @@ import ThemeIcon from "../components/ThemeIcon.astro";
           />
         </div>
       </div>
+      <h3>Note worthy PRs:</h3>
       <ul>
         <li>
           Worked on <a
@@ -134,13 +135,6 @@ import ThemeIcon from "../components/ThemeIcon.astro";
             href="https://github.com/freeCodeCamp/freeCodeCamp/pull/50286"
             rel="noopener noreferrer">Restful API, and implemented test</a
           > for it.
-        </li>
-        <li>
-          Helped freeCodeCamp issue by implementing <a
-            class="rounded-sm border-b border-slate-400 text-slate-700 transition-[border-color] hover:border-slate-600 hover:text-slate-500 hover:no-underline dark:text-slate-100 dark:hover:border-slate-50"
-            href="https://github.com/freeCodeCamp/freeCodeCamp/pulls?q=is%3Apr+author%3ASboonny+is%3Aclosed+"
-            >small pull requests</a
-          > that solves issue in small steps.
         </li>
         <li>
           Helped with rewrite of the old API to a <a
