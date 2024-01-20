@@ -5,7 +5,9 @@ import Layout from "../../layouts/Layout.astro";
 
 <Layout title="personal library">
   <ThemeIcon />
-  <main class="mx-5 grid gap-2 prose prose-headings:dark:text-slate-50 prose-a:dark:text-cyan-300 prose-code:dark:bg-slate-800 prose-code:dark:text-slate-100 dark:text-slate-200">
+  <main
+    class="prose mx-5 grid gap-2 dark:text-slate-200 prose-headings:dark:text-slate-50 prose-a:dark:text-cyan-300 prose-code:dark:bg-slate-800 prose-code:dark:text-slate-100"
+  >
     <h1 id="main-content" class="mb-4 text-4xl font-bold">
       This is a quick personal notes for me.
     </h1>
@@ -19,6 +21,10 @@ import { runInNewContext } from "vm";
 setFlagFromString("--expose_gc");
 const gc = runInNewContext("gc");
 `}</code></pre>
+
+    <h2>To terminate a port</h2>
+    <pre><code>{`netstat -aon | findstr '5432'
+ taskkill /pid 5660`}</code></pre>
 
     <h2 class="mb-2 mt-4 text-2xl font-bold">library of answers, I found</h2>
 
@@ -145,8 +151,7 @@ throw new Error("oops, I made a mistake!");
     <p class="mb-2">Node/npm</p>
 
     <p class="mb-2">
-      running <code>npx npkill</code> will cleare node-modules files in the
-      system
+      running <code>npx npkill</code> will cleare node-modules files in the system
     </p>
 
     <h2 class="mb-2 text-2xl font-bold">Links to Services, I use a lot</h2>
@@ -440,12 +445,18 @@ throw new Error("oops, I made a mistake!");
 
     <h3 class="mb-2 text-xl font-bold">Testing</h3>
     <ul>
-      <li><a href="https://mswjs.io/"
-        target="_blank"
-        rel="noopener noreferrer nofollow">mock service worker</a></li>
-        <li><a href="https://playwright.dev/"
+      <li>
+        <a
+          href="https://mswjs.io/"
           target="_blank"
-          rel="noopener noreferrer nofollow">playwright</a></li>
+          rel="noopener noreferrer nofollow">mock service worker</a>
+      </li>
+      <li>
+        <a
+          href="https://playwright.dev/"
+          target="_blank"
+          rel="noopener noreferrer nofollow">playwright</a>
+      </li>
     </ul>
   </main>
 </Layout>
