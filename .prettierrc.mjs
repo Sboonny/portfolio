@@ -1,7 +1,7 @@
 /** @type {import('prettier').Config} */
 const astro_prettier = import("prettier-plugin-astro");
 const prettier_tailwind = import("prettier-plugin-tailwindcss");
-module.exports = {
+export default {
   arrowParens: "always",
   printWidth: 80,
   singleQuote: false,

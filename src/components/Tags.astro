@@ -7,10 +7,11 @@ const { tags } = Astro.props;
 ---
 
 <ul class="mt-2 px-0">
-  {tags.map((tag)=> (
-    <li class="mr-2 inline-block rounded-full bg-gray-200 px-3 py-1 text-sm font-semibold text-gray-700">
-      {tag}
-    </li>
-  ))
+  {
+    tags.map((tag) => (
+      <li class="mr-2 inline-block rounded-full bg-gray-200 px-3 py-1 text-sm font-semibold text-gray-700">
+        {tag}
+      </li>
+    ))
   }
 </ul>

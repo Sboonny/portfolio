@@ -16,4 +16,4 @@ A fitting example of this is the `code` element in the documents, because in mos
 
 Note: You can use a function to look up the relevant context for the paragraph and swap it, but I am not going to delve into this, because this is not the point of this article, neither will I delve into how to set up RTL layout, I will assume you already have it. So for the sake of the argument assume that the content of the paragraphed is swapped into RTL, but the content of the `code` element is not, like how it's mostly done normally.
 
-## 
+##

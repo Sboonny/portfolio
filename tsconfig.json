@@ -3,7 +3,7 @@
   "compilerOptions": {
     "module": "ESNext",
     "lib": ["esnext", "dom", "dom.iterable"],
-    "moduleResolution": "node",  
+    "moduleResolution": "node",
     "strict": true,
     "noUncheckedIndexedAccess": true,
     "isolatedModules": true,

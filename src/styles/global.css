@@ -8,13 +8,13 @@
     @apply antialiased;
   }
 
- legend {
+  legend {
     all: unset;
   }
 }
 
 .grid-cols-fit {
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr) );
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
 }
 
 /**
@@ -74,11 +74,11 @@ pre[class*="language-"] {
   :not(pre) > code[class*="language-"],
   pre[class*="language-"] {
     background: window;
-}
-
-@supports (-webkit-touch-callout: none) {
-  .h-screen {
-    height: -webkit-fill-available;
   }
-}
+
+  @supports (-webkit-touch-callout: none) {
+    .h-screen {
+      height: -webkit-fill-available;
+    }
+  }
 }

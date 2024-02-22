@@ -7,12 +7,13 @@
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "prettier": "prettier --write . --plugin=prettier-plugin-astro"
   },
   "devDependencies": {
     "@tailwindcss/typography": "0.5.10",
-    "astro": "4.2.1",
-    "prettier": "3.2.4",
+    "astro": "4.4.2",
+    "prettier": "3.2.5",
     "prettier-plugin-astro": "0.13.0",
     "prettier-plugin-tailwindcss": "0.5.11",
     "tailwindcss": "3.4.1"
