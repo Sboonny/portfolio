@@ -8,3 +8,7 @@ To run locally
 pnpm install
 pnpm dev
 ```
+
+## About
+
+You won't need to worry about lacking stuff, or needing to find the right tools with

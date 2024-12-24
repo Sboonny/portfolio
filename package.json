@@ -12,13 +12,13 @@
   },
   "devDependencies": {
     "@tailwindcss/typography": "0.5.15",
-    "astro": "4.16.13",
-    "prettier": "3.3.3",
+    "astro": "5.1.1",
+    "prettier": "3.4.2",
     "prettier-plugin-astro": "0.14.1",
-    "prettier-plugin-tailwindcss": "0.6.8",
-    "tailwindcss": "3.4.15"
+    "prettier-plugin-tailwindcss": "0.6.9",
+    "tailwindcss": "3.4.17"
   },
   "dependencies": {
-    "@astrojs/tailwind": "5.1.2"
+    "@astrojs/tailwind": "5.1.4"
   }
 }
