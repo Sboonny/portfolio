@@ -1,23 +1,28 @@
 <!doctype html>
 <html lang="en" dir="ltr">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Muhammed Mustafa | Software Engineer: React, TypeScript, Node.js</title>
-  <meta name="description" content="Muhammed Mustafa (Sboonny) is a frontend-focused full-stack TypeScript engineer and former full-time freeCodeCamp engineer: 560 merged pull requests, right-to-left layouts, a Fastify API and component libraries.">
+  <meta name="description"
+    content="Muhammed Mustafa (Sboonny) is a frontend-focused full-stack TypeScript engineer and former full-time freeCodeCamp engineer: 560 merged pull requests, right-to-left layouts, a Fastify API and component libraries.">
   <meta name="author" content="Muhammed M. Mustafa">
   <meta name="color-scheme" content="light dark">
   <meta name="theme-color" content="#f6f7f9" media="(prefers-color-scheme: light)">
   <meta name="theme-color" content="#0b1120" media="(prefers-color-scheme: dark)">
 
-  <!-- Built for the Sboonny/portfolio repo (GitHub Pages project site). If the URL changes, update canonical, og:url and the JSON-LD url. -->
   <link rel="canonical" href="https://sboonny.github.io/portfolio/">
-  <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI+IDxkZWZzPiA8bGluZWFyR3JhZGllbnQgaWQ9ImciIHgxPSIwIiB5MT0iMCIgeDI9IjEiIHkyPSIxIj4gPHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjMWQ0ZWQ4Ii8+IDxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzA4OTFiMiIvPiA8L2xpbmVhckdyYWRpZW50PiA8L2RlZnM+IDxyZWN0IHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCIgcng9IjE0IiBmaWxsPSJ1cmwoI2cpIi8+IDx0ZXh0IHg9IjMyIiB5PSI0MiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9IlNlZ29lIFVJLCBBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIyNiIgZm9udC13ZWlnaHQ9IjcwMCIgZmlsbD0iI2ZmZmZmZiIgbGV0dGVyLXNwYWNpbmc9Ii0xIj5NTTwvdGV4dD4gPC9zdmc+" type="image/svg+xml">
+  <link rel="icon"
+    href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI+IDxkZWZzPiA8bGluZWFyR3JhZGllbnQgaWQ9ImciIHgxPSIwIiB5MT0iMCIgeDI9IjEiIHkyPSIxIj4gPHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjMWQ0ZWQ4Ii8+IDxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzA4OTFiMiIvPiA8L2xpbmVhckdyYWRpZW50PiA8L2RlZnM+IDxyZWN0IHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCIgcng9IjE0IiBmaWxsPSJ1cmwoI2cpIi8+IDx0ZXh0IHg9IjMyIiB5PSI0MiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9IlNlZ29lIFVJLCBBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIyNiIgZm9udC13ZWlnaHQ9IjcwMCIgZmlsbD0iI2ZmZmZmZiIgbGV0dGVyLXNwYWNpbmc9Ii0xIj5NTTwvdGV4dD4gPC9zdmc+"
+    type="image/svg+xml">
+  <link href="/styles.css" rel="stylesheet" />
 
   <meta property="og:type" content="profile">
   <meta property="og:url" content="https://sboonny.github.io/portfolio/">
   <meta property="og:title" content="Muhammed Mustafa | Software Engineer: React, TypeScript, Node.js">
-  <meta property="og:description" content="373 merged PRs to freeCodeCamp in 2022–23. Right-to-left layouts, a Fastify API and component libraries, all public on GitHub.">
+  <meta property="og:description"
+    content="373 merged PRs to freeCodeCamp in 2022–23. Right-to-left layouts, a Fastify API and component libraries, all public on GitHub.">
   <meta property="og:image" content="https://github.com/Sboonny.png">
   <meta property="og:image:alt" content="Muhammed Mustafa's GitHub avatar">
   <meta property="profile:first_name" content="Muhammed">
@@ -25,7 +30,6 @@
   <meta property="profile:username" content="Sboonny">
   <meta name="twitter:card" content="summary">
 
-  <!-- Runs before first paint: sets the saved theme and enables JS-only animation states without a flash. -->
   <script>
     (function () {
       var d = document.documentElement;
@@ -33,619 +37,10 @@
       try {
         var t = localStorage.getItem('theme');
         if (t === 'light' || t === 'dark') d.dataset.theme = t;
-      } catch (e) {}
+      } catch (e) { }
     })();
   </script>
 
-  <style>
-/* ==========================================================================
-   Muhammed Mustafa: portfolio
-   Written with CSS logical properties throughout, so the whole page mirrors
-   correctly if it is served with dir="rtl" (the same technique as the RTL work
-   it showcases).
-   ========================================================================== */
-
-/* ---------- Tokens ---------- */
-:root {
-  --bg: #f6f7f9;
-  --bg-elev: #ffffff;
-  --text: #121826;
-  --muted: #566070;
-  --border: #e3e6ec;
-  --accent: #1d5fd1;
-  --accent-2: #0891b2;
-  --accent-soft: #e8f0fd;
-  --accent-contrast: #ffffff;
-  --code-bg: #eef1f5;
-  --shadow: 0 1px 2px rgb(16 24 40 / .06), 0 8px 24px -12px rgb(16 24 40 / .18);
-  --shadow-hover: 0 2px 4px rgb(16 24 40 / .06), 0 18px 40px -16px rgb(16 24 40 / .28);
-  --glow-a: rgb(29 95 209 / .16);
-  --glow-b: rgb(8 145 178 / .14);
-
-  --font-sans: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans", "Noto Sans Arabic", sans-serif;
-  --font-mono: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
-
-  --radius: 14px;
-  --radius-sm: 8px;
-  --max: 70rem;
-  --ease: cubic-bezier(.2, .7, .2, 1);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) {
-    --bg: #0b1120;
-    --bg-elev: #111a2e;
-    --text: #e7ebf3;
-    --muted: #9aa5b8;
-    --border: #1f2a40;
-    --accent: #6aa8ff;
-    --accent-2: #22d3ee;
-    --accent-soft: #14223d;
-    --accent-contrast: #081226;
-    --code-bg: #18233a;
-    --shadow: 0 1px 2px rgb(0 0 0 / .3), 0 8px 24px -12px rgb(0 0 0 / .6);
-    --shadow-hover: 0 2px 4px rgb(0 0 0 / .3), 0 18px 40px -16px rgb(0 0 0 / .7);
-    --glow-a: rgb(59 130 246 / .22);
-    --glow-b: rgb(34 211 238 / .14);
-  }
-}
-
-:root[data-theme="dark"] {
-  --bg: #0b1120;
-  --bg-elev: #111a2e;
-  --text: #e7ebf3;
-  --muted: #9aa5b8;
-  --border: #1f2a40;
-  --accent: #6aa8ff;
-  --accent-2: #22d3ee;
-  --accent-soft: #14223d;
-  --accent-contrast: #081226;
-  --code-bg: #18233a;
-  --shadow: 0 1px 2px rgb(0 0 0 / .3), 0 8px 24px -12px rgb(0 0 0 / .6);
-  --shadow-hover: 0 2px 4px rgb(0 0 0 / .3), 0 18px 40px -16px rgb(0 0 0 / .7);
-  --glow-a: rgb(59 130 246 / .22);
-  --glow-b: rgb(34 211 238 / .14);
-}
-
-/* ---------- Base ---------- */
-*, *::before, *::after { box-sizing: border-box; }
-
-html { scroll-behavior: smooth; scroll-padding-block-start: 5rem; -webkit-text-size-adjust: 100%; }
-
-body {
-  margin: 0;
-  background: var(--bg);
-  color: var(--text);
-  font-family: var(--font-sans);
-  font-size: 1.0625rem;
-  line-height: 1.65;
-  -webkit-font-smoothing: antialiased;
-  transition: background-color .3s ease, color .3s ease;
-}
-
-h1, h2, h3 { line-height: 1.2; margin: 0 0 .75rem; letter-spacing: -.015em; }
-h1 { font-size: clamp(2.4rem, 1.6rem + 3.6vw, 4rem); letter-spacing: -.03em; }
-h2 { font-size: clamp(1.6rem, 1.2rem + 1.6vw, 2.25rem); }
-h3 { font-size: 1.125rem; }
-p { margin: 0 0 1rem; }
-img { max-inline-size: 100%; display: block; }
-
-a { color: var(--accent); text-underline-offset: .18em; text-decoration-thickness: 1px; }
-a:hover { text-decoration-thickness: 2px; }
-:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; border-radius: 6px; }
-
-code {
-  font-family: var(--font-mono);
-  font-size: .88em;
-  background: var(--code-bg);
-  padding-block: .1em;
-  padding-inline: .35em;
-  border-radius: 5px;
-}
-
-.container { inline-size: min(100% - 2rem, var(--max)); margin-inline: auto; }
-.muted { color: var(--muted); font-weight: 400; }
-.accent-text {
-  background: linear-gradient(90deg, var(--accent), var(--accent-2));
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-}
-
-.visually-hidden {
-  position: absolute !important;
-  inline-size: 1px; block-size: 1px;
-  overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap;
-}
-
-.skip-link {
-  position: absolute;
-  inset-inline-start: 1rem;
-  inset-block-start: -4rem;
-  z-index: 100;
-  background: var(--accent);
-  color: var(--accent-contrast);
-  padding: .5rem 1rem;
-  border-radius: var(--radius-sm);
-}
-.skip-link:focus { inset-block-start: 1rem; }
-
-/* ---------- Buttons ---------- */
-.button {
-  display: inline-flex;
-  align-items: center;
-  gap: .5rem;
-  padding-block: .65rem;
-  padding-inline: 1.1rem;
-  border: 1px solid var(--border);
-  border-radius: 999px;
-  background: var(--bg-elev);
-  color: var(--text);
-  font-weight: 600;
-  font-size: .95rem;
-  text-decoration: none;
-  transition: transform .2s var(--ease), border-color .2s ease, box-shadow .2s ease, background-color .2s ease;
-}
-.button:hover { border-color: var(--accent); transform: translateY(-1px); box-shadow: var(--shadow); text-decoration: none; }
-.button.primary {
-  background: linear-gradient(135deg, var(--accent), var(--accent-2));
-  border-color: transparent;
-  color: #fff;
-}
-:root[data-theme="dark"] .button.primary { color: #06101f; }
-@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .button.primary { color: #06101f; } }
-.button.small { padding-block: .4rem; padding-inline: .9rem; font-size: .875rem; }
-
-.icon-button {
-  display: inline-grid;
-  place-items: center;
-  inline-size: 2.4rem;
-  block-size: 2.4rem;
-  border: 1px solid var(--border);
-  border-radius: 999px;
-  background: var(--bg-elev);
-  color: var(--text);
-  cursor: pointer;
-  transition: border-color .2s ease;
-}
-.icon-button:hover { border-color: var(--accent); }
-
-.theme-toggle .icon-moon { display: none; }
-:root[data-theme="dark"] .theme-toggle .icon-sun { display: none; }
-:root[data-theme="dark"] .theme-toggle .icon-moon { display: block; }
-
-/* ---------- Header ---------- */
-.site-header {
-  position: sticky;
-  inset-block-start: 0;
-  z-index: 50;
-  background: color-mix(in srgb, var(--bg) 82%, transparent);
-  backdrop-filter: saturate(1.5) blur(10px);
-  -webkit-backdrop-filter: saturate(1.5) blur(10px);
-  border-block-end: 1px solid transparent;
-  transition: border-color .3s ease, box-shadow .3s ease;
-}
-.site-header.is-scrolled { border-block-end-color: var(--border); }
-
-.header-inner { display: flex; align-items: center; gap: 1rem; min-block-size: 4rem; }
-
-.brand {
-  display: inline-flex;
-  align-items: center;
-  gap: .6rem;
-  font-weight: 700;
-  color: var(--text);
-  text-decoration: none;
-  margin-inline-end: auto;
-}
-.brand img { border-radius: 7px; }
-
-.site-nav ul { list-style: none; margin: 0; padding: 0; display: flex; gap: .15rem; }
-.site-nav a {
-  display: block;
-  padding-block: .4rem;
-  padding-inline: .7rem;
-  color: var(--muted);
-  text-decoration: none;
-  border-radius: 999px;
-  font-size: .925rem;
-  font-weight: 500;
-  transition: color .2s ease, background-color .2s ease;
-}
-.site-nav a:hover, .site-nav a[aria-current="true"] { color: var(--text); background: var(--code-bg); }
-
-.header-actions { display: flex; align-items: center; gap: .5rem; }
-.nav-toggle { display: none; }
-
-@media (max-width: 60rem) {
-  .nav-toggle { display: inline-grid; }
-  .site-nav {
-    position: absolute;
-    inset-inline: 0;
-    inset-block-start: 100%;
-    background: var(--bg);
-    border-block-end: 1px solid var(--border);
-    display: none;
-  }
-  .site-nav.is-open { display: block; }
-  .site-nav ul { flex-direction: column; padding-block: .5rem 1rem; padding-inline: 1rem; }
-  .site-nav a { padding-block: .75rem; border-radius: var(--radius-sm); }
-}
-@media (max-width: 26rem) {
-  .brand span { display: none; }
-}
-
-/* ---------- Hero ---------- */
-.hero { position: relative; overflow: hidden; padding-block: clamp(3rem, 2rem + 6vw, 7rem) clamp(3rem, 2rem + 4vw, 5.5rem); }
-
-.hero-bg {
-  position: absolute;
-  inset: 0;
-  z-index: -1;
-  background-image:
-    linear-gradient(to right, color-mix(in srgb, var(--text) 5%, transparent) 1px, transparent 1px),
-    linear-gradient(to bottom, color-mix(in srgb, var(--text) 5%, transparent) 1px, transparent 1px);
-  background-size: 44px 44px;
-  mask-image: radial-gradient(ellipse 80% 70% at 50% 30%, #000 30%, transparent 75%);
-  -webkit-mask-image: radial-gradient(ellipse 80% 70% at 50% 30%, #000 30%, transparent 75%);
-}
-.hero-bg::before, .hero-bg::after {
-  content: "";
-  position: absolute;
-  border-radius: 50%;
-  filter: blur(60px);
-}
-.hero-bg::before {
-  inline-size: 38rem; block-size: 38rem;
-  inset-block-start: -14rem; inset-inline-end: -8rem;
-  background: var(--glow-a);
-  animation: drift-a 18s ease-in-out infinite alternate;
-}
-.hero-bg::after {
-  inline-size: 30rem; block-size: 30rem;
-  inset-block-end: -14rem; inset-inline-start: 20%;
-  background: var(--glow-b);
-  animation: drift-b 22s ease-in-out infinite alternate;
-}
-@keyframes drift-a { to { transform: translate(-6rem, 4rem) scale(1.1); } }
-@keyframes drift-b { to { transform: translate(5rem, -3rem) scale(.92); } }
-
-.hero-grid { display: grid; gap: clamp(2.5rem, 5vw, 4rem); align-items: center; }
-@media (min-width: 60rem) {
-  .hero-grid { grid-template-columns: 1.25fr .9fr; }
-}
-
-.handle {
-  display: inline-flex;
-  align-items: center;
-  gap: .6rem;
-  padding-block: .3rem;
-  padding-inline: .35rem .9rem;
-  border: 1px solid var(--border);
-  border-radius: 999px;
-  background: var(--bg-elev);
-  font-size: .875rem;
-  color: var(--muted);
-  margin-block-end: 1.5rem;
-}
-.handle img { border-radius: 50%; }
-
-.eyebrow {
-  color: var(--accent);
-  font-size: .85rem;
-  font-weight: 700;
-  letter-spacing: .08em;
-  text-transform: uppercase;
-  margin-block-end: .75rem;
-}
-
-.tagline { font-size: clamp(1.2rem, 1rem + .9vw, 1.55rem); line-height: 1.4; font-weight: 600; max-inline-size: 30ch; }
-.lead { color: var(--muted); max-inline-size: 56ch; }
-
-.facts {
-  list-style: none;
-  padding: 0;
-  margin-block: 1.75rem;
-  margin-inline: 0;
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: .75rem;
-  max-inline-size: 36rem;
-}
-.facts li {
-  padding: .9rem 1rem;
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  background: var(--bg-elev);
-  box-shadow: var(--shadow);
-}
-.facts strong {
-  display: block;
-  font-size: clamp(1.6rem, 1.2rem + 1.4vw, 2.1rem);
-  line-height: 1.1;
-  font-variant-numeric: tabular-nums;
-}
-.facts span { display: block; color: var(--muted); font-size: .85rem; line-height: 1.35; margin-block-start: .25rem; }
-
-.cta { display: flex; flex-wrap: wrap; gap: .75rem; }
-
-/* Hero entrance: staggered fade-up (only when JS is on, so no-JS users never see hidden content) */
-.js .hero-in { opacity: 0; transform: translateY(14px); animation: hero-in .8s var(--ease) forwards; animation-delay: calc(var(--i, 0) * 90ms + 60ms); }
-@keyframes hero-in { to { opacity: 1; transform: none; } }
-
-/* ---------- RTL demo card ---------- */
-.dir-demo {
-  margin: 0;
-  border: 1px solid var(--border);
-  border-radius: calc(var(--radius) + 4px);
-  background: var(--bg-elev);
-  box-shadow: var(--shadow-hover);
-  overflow: hidden;
-}
-.dir-demo__bar {
-  display: flex;
-  align-items: center;
-  gap: .75rem;
-  padding-block: .65rem;
-  padding-inline: 1rem;
-  border-block-end: 1px solid var(--border);
-}
-.dots { display: inline-flex; gap: .35rem; margin-inline-end: auto; }
-.dots i { inline-size: .6rem; block-size: .6rem; border-radius: 50%; background: #f87171; }
-.dots i:nth-child(2) { background: #fbbf24; }
-.dots i:nth-child(3) { background: #34d399; }
-.dir-demo__attr { font-size: .8rem; }
-.dir-demo__toggle {
-  font: inherit;
-  font-size: .8rem;
-  font-weight: 600;
-  padding-block: .3rem;
-  padding-inline: .7rem;
-  border-radius: 999px;
-  border: 1px solid var(--border);
-  background: var(--accent-soft);
-  color: var(--accent);
-  cursor: pointer;
-}
-.dir-demo__toggle:hover { border-color: var(--accent); }
-
-.dir-demo__body {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;      /* "start" follows dir, so this flips in RTL */
-  gap: .7rem;
-  padding-block: 1.6rem;
-  padding-inline: 1.5rem;
-  min-block-size: 12rem;
-  transition: opacity .18s ease;
-}
-.dir-demo__body.is-flipping { opacity: 0; }
-.dir-demo__title { font-size: 1.35rem; font-weight: 700; margin: 0; }
-.dir-demo__line {
-  display: block;
-  inline-size: 85%;
-  block-size: .6rem;
-  border-radius: 999px;
-  background: color-mix(in srgb, var(--muted) 35%, transparent);
-}
-.dir-demo__line.short { inline-size: 62%; }
-.dir-demo__cta {
-  margin-block-start: .5rem;
-  padding-block: .5rem;
-  padding-inline: 1rem;
-  border-radius: var(--radius-sm);
-  background: linear-gradient(135deg, var(--accent), var(--accent-2));
-  color: #fff;
-  font-weight: 600;
-  font-size: .9rem;
-}
-.dir-demo figcaption {
-  padding-block: .85rem;
-  padding-inline: 1rem;
-  border-block-start: 1px solid var(--border);
-  font-size: .85rem;
-  color: var(--muted);
-  background: color-mix(in srgb, var(--code-bg) 50%, transparent);
-}
-
-/* ---------- Sections ---------- */
-.section { padding-block: clamp(3.5rem, 2.5rem + 4vw, 6rem); }
-.section + .section { border-block-start: 1px solid var(--border); }
-.section-kicker {
-  color: var(--accent);
-  font-size: .8rem;
-  font-weight: 700;
-  letter-spacing: .1em;
-  text-transform: uppercase;
-  margin-block-end: .5rem;
-}
-.section-intro { color: var(--muted); max-inline-size: 60ch; margin-block-end: 2rem; }
-.prose { max-inline-size: 64ch; }
-.prose p { color: var(--muted); }
-
-/* Scroll reveal (JS adds .is-visible) */
-.js .reveal { opacity: 0; transform: translateY(18px); transition: opacity .7s var(--ease), transform .7s var(--ease); }
-.js .reveal.is-visible { opacity: 1; transform: none; }
-
-/* ---------- About ---------- */
-.about-grid { display: grid; gap: 2.5rem; }
-@media (min-width: 60rem) { .about-grid { grid-template-columns: 1.4fr 1fr; align-items: center; } }
-
-.quote {
-  position: relative;
-  margin: 0;
-  padding: 1.75rem;
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  background: var(--bg-elev);
-  box-shadow: var(--shadow);
-}
-.quote::before {
-  content: "";
-  position: absolute;
-  inset-block: 1.25rem;
-  inset-inline-start: 0;
-  inline-size: 3px;
-  border-radius: 3px;
-  background: linear-gradient(var(--accent), var(--accent-2));
-}
-.quote-mark { color: var(--accent); opacity: .35; margin-block-end: .5rem; }
-.quote blockquote { margin: 0 0 1rem; font-size: 1.2rem; line-height: 1.5; font-weight: 600; }
-.quote blockquote p { margin: 0; }
-.quote figcaption { font-size: .875rem; color: var(--muted); }
-
-/* ---------- Experience timeline ---------- */
-.timeline { list-style: none; margin: 1.5rem 0 0; padding: 0; position: relative; }
-.timeline::before {
-  content: "";
-  position: absolute;
-  inset-block: .5rem;
-  inset-inline-start: .45rem;
-  inline-size: 2px;
-  background: linear-gradient(var(--accent), var(--border));
-}
-.job { position: relative; padding-inline-start: 2.25rem; }
-.job + .job { margin-block-start: 2.25rem; }
-.job::before {
-  content: "";
-  position: absolute;
-  inset-inline-start: 0;
-  inset-block-start: .35rem;
-  inline-size: 1rem;
-  block-size: 1rem;
-  border-radius: 50%;
-  background: var(--bg);
-  border: 3px solid var(--accent);
-}
-.job-head h3 { font-size: 1.2rem; margin-block-end: .2rem; }
-.job-meta { display: flex; flex-wrap: wrap; column-gap: 1rem; color: var(--muted); font-size: .95rem; margin-block-end: .75rem; }
-.job ul { margin: 0; padding-inline-start: 1.1rem; }
-.job li { margin-block-end: .45rem; max-inline-size: 75ch; }
-.job li::marker { color: var(--accent); }
-
-/* ---------- Project cards ---------- */
-.cards { display: grid; gap: 1.25rem; grid-template-columns: repeat(auto-fit, minmax(min(100%, 30rem), 1fr)); }
-.card {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  padding: clamp(1.25rem, 1rem + 1vw, 1.75rem);
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  background: var(--bg-elev);
-  box-shadow: var(--shadow);
-  transition: transform .25s var(--ease), box-shadow .25s ease, border-color .25s ease, opacity .7s var(--ease);
-}
-.card:hover { transform: translateY(-4px); box-shadow: var(--shadow-hover); border-color: color-mix(in srgb, var(--accent) 45%, var(--border)); }
-/* Once revealed, cards keep the snappy hover timing instead of the slow reveal timing. */
-.js .card.reveal.is-visible { transition: transform .3s var(--ease), box-shadow .25s ease, border-color .25s ease, opacity .7s var(--ease); }
-.js .card.reveal.is-visible:hover { transform: translateY(-4px); }
-.card header h3 { font-size: 1.25rem; margin: 0; }
-.card-kicker { font-size: .8rem; color: var(--muted); font-weight: 600; margin-block-end: .3rem; }
-
-.card-facts { margin: 0; display: grid; gap: .75rem; }
-.card-facts div { display: grid; gap: .1rem; }
-.card-facts dt { font-size: .75rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--accent); }
-.card-facts dd { margin: 0; color: var(--muted); font-size: .96rem; }
-
-.tags { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: .4rem; }
-.tags li {
-  font-size: .8rem;
-  font-weight: 500;
-  padding-block: .2rem;
-  padding-inline: .65rem;
-  border-radius: 999px;
-  background: var(--code-bg);
-  color: var(--text);
-}
-
-.card-links {
-  margin-block: auto 0;
-  padding-block-start: .5rem;
-  display: flex;
-  flex-wrap: wrap;
-  gap: .4rem 1.25rem;
-  font-weight: 600;
-  font-size: .925rem;
-}
-.card-links a { text-decoration: none; }
-.card-links a::after { content: " \2197"; }  /* ↗ */
-.card-links a:hover { text-decoration: underline; }
-
-/* ---------- Open source ---------- */
-.oss-list { list-style: none; margin: 1.5rem 0 0; padding: 0; display: grid; gap: .75rem; }
-.oss-list li {
-  display: flex;
-  align-items: flex-start;
-  gap: 1rem;
-  padding: 1rem 1.25rem;
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  background: var(--bg-elev);
-  transition: border-color .2s ease, transform .25s var(--ease), opacity .7s var(--ease);
-}
-.oss-list li:hover { border-color: color-mix(in srgb, var(--accent) 45%, var(--border)); }
-.oss-list img { border-radius: 8px; flex: none; margin-block-start: .15rem; }
-.oss-list h3 { font-size: 1rem; margin-block-end: .15rem; }
-.oss-list p { margin: 0; color: var(--muted); font-size: .95rem; }
-
-/* ---------- Skills ---------- */
-.skills { display: grid; gap: 1rem; margin-block-start: 1.5rem; grid-template-columns: repeat(auto-fit, minmax(min(100%, 16rem), 1fr)); }
-.skill-group { padding: 1.25rem; border: 1px solid var(--border); border-radius: var(--radius); background: var(--bg-elev); }
-.skill-group h3 { font-size: .95rem; margin-block-end: .75rem; }
-
-/* ---------- Achievements ---------- */
-.achievements { list-style: none; margin: 1.5rem 0 0; padding: 0; display: grid; gap: 1rem; grid-template-columns: repeat(auto-fit, minmax(min(100%, 19rem), 1fr)); }
-.achievements li { padding: 1.25rem; border: 1px solid var(--border); border-radius: var(--radius); background: var(--bg-elev); }
-.achievements strong { display: block; margin-block-end: .25rem; }
-.achievements span { color: var(--muted); font-size: .95rem; }
-
-/* ---------- Contact ---------- */
-.contact-card {
-  position: relative;
-  overflow: hidden;
-  padding: clamp(1.75rem, 1rem + 3vw, 3rem);
-  border: 1px solid var(--border);
-  border-radius: calc(var(--radius) + 6px);
-  background:
-    radial-gradient(ellipse at 100% 0%, var(--glow-a), transparent 60%),
-    radial-gradient(ellipse at 0% 100%, var(--glow-b), transparent 55%),
-    var(--bg-elev);
-  box-shadow: var(--shadow);
-}
-.contact-card > p { color: var(--muted); max-inline-size: 55ch; }
-.contact-email { font-size: clamp(1.2rem, 1rem + 1.2vw, 1.75rem); font-weight: 700; }
-.contact-email a { color: var(--text); overflow-wrap: anywhere; }
-
-/* ---------- Footer ---------- */
-.site-footer { border-block-start: 1px solid var(--border); padding-block: 2rem; font-size: .875rem; }
-.footer-inner { display: flex; flex-wrap: wrap; justify-content: space-between; gap: .5rem 2rem; }
-.site-footer p { margin: 0; }
-
-/* ---------- Small screens ---------- */
-@media (max-width: 30rem) {
-  .facts { grid-template-columns: 1fr; }
-  .facts li { display: flex; align-items: baseline; gap: .75rem; }
-  .facts span { margin: 0; }
-  .resume-link { display: none; }
-}
-
-/* ---------- Reduced motion: switch every animation off ---------- */
-@media (prefers-reduced-motion: reduce) {
-  html { scroll-behavior: auto; }
-  *, *::before, *::after { animation: none !important; transition: none !important; }
-  .js .hero-in, .js .reveal { opacity: 1; transform: none; }
-}
-
-/* ---------- Print ---------- */
-@media print {
-  .site-header, .hero-bg, .cta, .dir-demo, .skip-link { display: none !important; }
-  body { background: #fff; color: #000; }
-  .section { padding-block: 1rem; }
-  .js .reveal, .js .hero-in { opacity: 1 !important; transform: none !important; }
-}
-
-  </style>
 
   <script type="application/ld+json">
   {
@@ -666,13 +61,16 @@ code {
   }
   </script>
 </head>
+
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
 
   <header class="site-header">
     <div class="container header-inner">
       <a class="brand" href="#top" aria-label="Muhammed Mustafa, back to top">
-        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI+IDxkZWZzPiA8bGluZWFyR3JhZGllbnQgaWQ9ImciIHgxPSIwIiB5MT0iMCIgeDI9IjEiIHkyPSIxIj4gPHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjMWQ0ZWQ4Ii8+IDxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzA4OTFiMiIvPiA8L2xpbmVhckdyYWRpZW50PiA8L2RlZnM+IDxyZWN0IHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCIgcng9IjE0IiBmaWxsPSJ1cmwoI2cpIi8+IDx0ZXh0IHg9IjMyIiB5PSI0MiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9IlNlZ29lIFVJLCBBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIyNiIgZm9udC13ZWlnaHQ9IjcwMCIgZmlsbD0iI2ZmZmZmZiIgbGV0dGVyLXNwYWNpbmc9Ii0xIj5NTTwvdGV4dD4gPC9zdmc+" alt="" width="28" height="28">
+        <img
+          src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI+IDxkZWZzPiA8bGluZWFyR3JhZGllbnQgaWQ9ImciIHgxPSIwIiB5MT0iMCIgeDI9IjEiIHkyPSIxIj4gPHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjMWQ0ZWQ4Ii8+IDxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzA4OTFiMiIvPiA8L2xpbmVhckdyYWRpZW50PiA8L2RlZnM+IDxyZWN0IHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCIgcng9IjE0IiBmaWxsPSJ1cmwoI2cpIi8+IDx0ZXh0IHg9IjMyIiB5PSI0MiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9IlNlZ29lIFVJLCBBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIyNiIgZm9udC13ZWlnaHQ9IjcwMCIgZmlsbD0iI2ZmZmZmZiIgbGV0dGVyLXNwYWNpbmc9Ii0xIj5NTTwvdGV4dD4gPC9zdmc+"
+          alt="" width="28" height="28">
         <span>Muhammed Mustafa</span>
       </a>
 
@@ -690,31 +88,43 @@ code {
       <div class="header-actions">
         <a class="button small primary resume-link" href="Muhammed_Mustafa_Resume.pdf" download>Résumé</a>
         <button class="icon-button theme-toggle" type="button" aria-label="Toggle dark mode" aria-pressed="false">
-          <svg class="icon-sun" aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
-          <svg class="icon-moon" aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+          <svg class="icon-sun" aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round">
+            <circle cx="12" cy="12" r="4" />
+            <path
+              d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4" />
+          </svg>
+          <svg class="icon-moon" aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round">
+            <path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z" />
+          </svg>
         </button>
         <button class="icon-button nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
           <span class="visually-hidden">Menu</span>
-          <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+          <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="2" stroke-linecap="round">
+            <path d="M4 7h16M4 12h16M4 17h16" />
+          </svg>
         </button>
       </div>
     </div>
   </header>
 
   <main id="main">
-    <!-- ============ HERO ============ -->
     <section id="top" class="hero" aria-labelledby="hero-title">
       <div class="hero-bg" aria-hidden="true"></div>
       <div class="container hero-grid">
         <div class="hero-copy">
           <p class="handle hero-in" style="--i:0">
-            <img src="https://github.com/Sboonny.png?size=64" alt="Sboonny's GitHub avatar" width="28" height="28" loading="eager">
+            <img src="https://github.com/Sboonny.png?size=64" alt="Sboonny's GitHub avatar" width="28" height="28"
+              loading="eager">
             <span>@Sboonny · Suez, Egypt · open to remote</span>
           </p>
           <p class="eyebrow hero-in" style="--i:1">Software Engineer · Frontend-Focused Full-Stack</p>
           <h1 id="hero-title" class="hero-in" style="--i:2">Muhammed Mustafa</h1>
           <p class="tagline hero-in" style="--i:3">
-            I build React interfaces, component libraries and <span class="accent-text">right-to-left layouts</span>, and the Node.js APIs behind them.
+            I build React interfaces, component libraries and <span class="accent-text">right-to-left layouts</span>,
+            and the Node.js APIs behind them.
           </p>
           <p class="lead hero-in" style="--i:4">
             Former full-time engineer at freeCodeCamp. In 2022–2023 I merged more pull requests into its main
@@ -729,18 +139,23 @@ code {
 
           <div class="cta hero-in" style="--i:6">
             <a class="button primary" href="Muhammed_Mustafa_Resume.pdf" download>
-              <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12M7 10l5 5 5-5M5 21h14"/></svg>
+              <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 3v12M7 10l5 5 5-5M5 21h14" />
+              </svg>
               Download résumé (PDF)
             </a>
             <a class="button" href="https://github.com/Sboonny" rel="me">
-              <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.52-1.33-1.28-1.69-1.28-1.69-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.19-3.08-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.8 1.19 1.82 1.19 3.08 0 4.41-2.69 5.38-5.26 5.67.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5z"/></svg>
+              <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.52-1.33-1.28-1.69-1.28-1.69-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.19-3.08-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.8 1.19 1.82 1.19 3.08 0 4.41-2.69 5.38-5.26 5.67.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5z" />
+              </svg>
               GitHub
             </a>
             <a class="button" href="https://www.linkedin.com/in/sboonny" rel="me">LinkedIn</a>
           </div>
         </div>
 
-        <!-- Live demo of the technique behind the RTL work: one attribute flips the layout. -->
         <figure class="dir-demo hero-in" style="--i:3">
           <div class="dir-demo__bar">
             <span class="dots" aria-hidden="true"><i></i><i></i><i></i></span>
@@ -761,7 +176,6 @@ code {
       </div>
     </section>
 
-    <!-- ============ ABOUT ============ -->
     <section id="about" class="section" aria-labelledby="about-title">
       <div class="container about-grid">
         <div class="reveal">
@@ -776,16 +190,21 @@ code {
             <p>
               Most of my work is on the frontend: CSS architecture, shared components and layouts that work in both
               writing directions. As a native Arabic speaker, I built the platform's right-to-left support. I'm just as
-              comfortable on the server, writing Fastify routes with Prisma or GraphQL features with Apollo and PostgreSQL.
+              comfortable on the server, writing Fastify routes with Prisma or GraphQL features with Apollo and
+              PostgreSQL.
             </p>
             <p>
               Every change I've made there went through public code review. You can
-              <a href="https://github.com/pulls?q=is%3Apr+author%3ASboonny+is%3Amerged">read all 560 merged pull requests on GitHub</a>.
+              <a href="https://github.com/pulls?q=is%3Apr+author%3ASboonny+is%3Amerged">read all 560 merged pull
+                requests on GitHub</a>.
             </p>
           </div>
         </div>
         <figure class="quote reveal">
-          <svg class="quote-mark" aria-hidden="true" width="36" height="36" viewBox="0 0 24 24" fill="currentColor"><path d="M9.5 6C6.5 7.2 5 9.6 5 13v5h6v-6H8c0-2 1-3.4 3-4.2L9.5 6zm9 0c-3 1.2-4.5 3.6-4.5 7v5h6v-6h-3c0-2 1-3.4 3-4.2L18.5 6z"/></svg>
+          <svg class="quote-mark" aria-hidden="true" width="36" height="36" viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M9.5 6C6.5 7.2 5 9.6 5 13v5h6v-6H8c0-2 1-3.4 3-4.2L9.5 6zm9 0c-3 1.2-4.5 3.6-4.5 7v5h6v-6h-3c0-2 1-3.4 3-4.2L18.5 6z" />
+          </svg>
           <blockquote>
             <p>Muhammed is a consummate developer with an encyclopedic knowledge of full stack development.</p>
           </blockquote>
@@ -797,7 +216,6 @@ code {
       </div>
     </section>
 
-    <!-- ============ EXPERIENCE ============ -->
     <section id="experience" class="section" aria-labelledby="experience-title">
       <div class="container">
         <p class="section-kicker reveal">Experience</p>
@@ -807,22 +225,31 @@ code {
           <li class="job reveal">
             <div class="job-head">
               <h3>Software Development Consultant <span class="muted">· full-time</span></h3>
-              <p class="job-meta"><span>freeCodeCamp · Remote</span><span><time datetime="2022-07">Jul 2022</time> – <time datetime="2023-10">Oct 2023</time></span></p>
+              <p class="job-meta"><span>freeCodeCamp · Remote</span><span><time datetime="2022-07">Jul 2022</time> –
+                  <time datetime="2023-10">Oct 2023</time></span></p>
             </div>
             <ul>
-              <li>Merged <a href="https://github.com/freeCodeCamp/freeCodeCamp/pulls?q=is%3Apr+author%3ASboonny+is%3Amerged">373 pull requests</a> into freeCodeCamp/freeCodeCamp in 2022–2023 across the React/TypeScript client, the new Node.js API and shared tooling.</li>
-              <li>Built the platform's right-to-left layout for Arabic learners and extended it across the product in about 20 follow-up PRs.</li>
-              <li>Helped migrate the client from React-Bootstrap to an in-house Tailwind CSS / Radix UI component library, one component at a time.</li>
+              <li>Merged <a
+                  href="https://github.com/freeCodeCamp/freeCodeCamp/pulls?q=is%3Apr+author%3ASboonny+is%3Amerged">373
+                  pull requests</a> into freeCodeCamp/freeCodeCamp in 2022–2023 across the React/TypeScript client, the
+                new Node.js API and shared tooling.</li>
+              <li>Built the platform's right-to-left layout for Arabic learners and extended it across the product in
+                about 20 follow-up PRs.</li>
+              <li>Helped migrate the client from React-Bootstrap to an in-house Tailwind CSS / Radix UI component
+                library, one component at a time.</li>
               <li>Implemented REST endpoints for the new Fastify + Prisma API and added Sentry error monitoring.</li>
               <li>Delivered 144 merged PRs to Chapter (Next.js, Apollo GraphQL, PostgreSQL).</li>
-              <li>Wrote tests for new API routes and maintained the Cypress end-to-end suite; refactored deprecated code into typed React components.</li>
-              <li>Maintained freeCodeCamp's Node.js libraries, reviewed community PRs, and mentored teammates and contributors through pair programming.</li>
+              <li>Wrote tests for new API routes and maintained the Cypress end-to-end suite; refactored deprecated code
+                into typed React components.</li>
+              <li>Maintained freeCodeCamp's Node.js libraries, reviewed community PRs, and mentored teammates and
+                contributors through pair programming.</li>
             </ul>
           </li>
           <li class="job reveal">
             <div class="job-head">
               <h3>Frontend Developer <span class="muted">· freelance</span></h3>
-              <p class="job-meta"><span>Self-employed · Suez, Egypt</span><span><time datetime="2021-03">Mar 2021</time> – <time datetime="2022-06">Jun 2022</time></span></p>
+              <p class="job-meta"><span>Self-employed · Suez, Egypt</span><span><time datetime="2021-03">Mar 2021</time>
+                  – <time datetime="2022-06">Jun 2022</time></span></p>
             </div>
             <ul>
               <li>Front-end web development work for clients as an independent developer.</li>
@@ -832,12 +259,12 @@ code {
       </div>
     </section>
 
-    <!-- ============ PROJECTS ============ -->
     <section id="projects" class="section" aria-labelledby="projects-title">
       <div class="container">
         <p class="section-kicker reveal">Featured projects</p>
         <h2 id="projects-title" class="reveal">What I built, with the code to prove it</h2>
-        <p class="section-intro reveal">Each project links to the merged pull requests, so you can read the code and the review discussion.</p>
+        <p class="section-intro reveal">Each project links to the merged pull requests, so you can read the code and the
+          review discussion.</p>
 
         <div class="cards">
           <article class="card reveal">
@@ -846,14 +273,34 @@ code {
               <h3>Right-to-left layout for freeCodeCamp.org</h3>
             </header>
             <dl class="card-facts">
-              <div><dt>Problem</dt><dd>The float-based React client had no right-to-left support, so Arabic learners got a left-to-right interface.</dd></div>
-              <div><dt>Solution</dt><dd>RTL layout support: mirrored navigation, RTL typography, direction-aware icons and a root <code>dir</code> attribute. Spacing moved to CSS logical properties so components work in both directions.</dd></div>
-              <div><dt>My contribution</dt><dd>Authored the initial RTL PR, then about 20 follow-ups covering the code console, profile, search, challenge tables and code blocks.</dd></div>
+              <div>
+                <dt>Problem</dt>
+                <dd>The float-based React client had no right-to-left support, so Arabic learners got a left-to-right
+                  interface.</dd>
+              </div>
+              <div>
+                <dt>Solution</dt>
+                <dd>RTL layout support: mirrored navigation, RTL typography, direction-aware icons and a root
+                  <code>dir</code> attribute. Spacing moved to CSS logical properties so components work in both
+                  directions.</dd>
+              </div>
+              <div>
+                <dt>My contribution</dt>
+                <dd>Authored the initial RTL PR, then about 20 follow-ups covering the code console, profile, search,
+                  challenge tables and code blocks.</dd>
+              </div>
             </dl>
-            <ul class="tags" aria-label="Technologies"><li>React</li><li>TypeScript</li><li>CSS logical properties</li><li>Flexbox / Grid</li><li>i18n</li></ul>
+            <ul class="tags" aria-label="Technologies">
+              <li>React</li>
+              <li>TypeScript</li>
+              <li>CSS logical properties</li>
+              <li>Flexbox / Grid</li>
+              <li>i18n</li>
+            </ul>
             <p class="card-links">
               <a href="https://github.com/freeCodeCamp/freeCodeCamp/pull/48287">Code: PR #48287</a>
-              <a href="https://github.com/freeCodeCamp/freeCodeCamp/pulls?q=is%3Apr+author%3ASboonny+is%3Amerged+rtl">All RTL PRs</a>
+              <a href="https://github.com/freeCodeCamp/freeCodeCamp/pulls?q=is%3Apr+author%3ASboonny+is%3Amerged+rtl">All
+                RTL PRs</a>
               <a href="https://www.freecodecamp.org/arabic/learn">Live: freeCodeCamp in Arabic</a>
             </p>
           </article>
@@ -864,15 +311,33 @@ code {
               <h3>freeCodeCamp's new API</h3>
             </header>
             <dl class="card-facts">
-              <div><dt>Problem</dt><dd>freeCodeCamp was replacing its legacy API server with a new TypeScript service.</dd></div>
-              <div><dt>Solution</dt><dd>A Fastify + Prisma API with typed routes, plus Sentry error monitoring as a Fastify plugin.</dd></div>
-              <div><dt>My contribution</dt><dd>15 merged API PRs: challenge saving, profile and settings updates, email validation and subscriptions, deprecating a legacy endpoint, the Prisma JSON protocol and the Prisma v5 upgrade.</dd></div>
+              <div>
+                <dt>Problem</dt>
+                <dd>freeCodeCamp was replacing its legacy API server with a new TypeScript service.</dd>
+              </div>
+              <div>
+                <dt>Solution</dt>
+                <dd>A Fastify + Prisma API with typed routes, plus Sentry error monitoring as a Fastify plugin.</dd>
+              </div>
+              <div>
+                <dt>My contribution</dt>
+                <dd>15 merged API PRs: challenge saving, profile and settings updates, email validation and
+                  subscriptions, deprecating a legacy endpoint, the Prisma JSON protocol and the Prisma v5 upgrade.</dd>
+              </div>
             </dl>
-            <ul class="tags" aria-label="Technologies"><li>Node.js</li><li>Fastify</li><li>Prisma</li><li>TypeScript</li><li>Sentry</li></ul>
+            <ul class="tags" aria-label="Technologies">
+              <li>Node.js</li>
+              <li>Fastify</li>
+              <li>Prisma</li>
+              <li>TypeScript</li>
+              <li>Sentry</li>
+            </ul>
             <p class="card-links">
               <a href="https://github.com/freeCodeCamp/freeCodeCamp/pull/50040">Code: PR #50040</a>
               <a href="https://github.com/freeCodeCamp/freeCodeCamp/pull/49731">Sentry plugin: PR #49731</a>
-              <a href="https://github.com/freeCodeCamp/freeCodeCamp/pulls?q=is%3Apr+author%3ASboonny+is%3Amerged+%22feat%28api%29%22">All 15 API PRs</a>
+              <a
+                href="https://github.com/freeCodeCamp/freeCodeCamp/pulls?q=is%3Apr+author%3ASboonny+is%3Amerged+%22feat%28api%29%22">All
+                15 API PRs</a>
             </p>
           </article>
 
@@ -882,11 +347,29 @@ code {
               <h3>Component library &amp; Bootstrap migration</h3>
             </header>
             <dl class="card-facts">
-              <div><dt>Problem</dt><dd>The client's UI was built on React-Bootstrap, which the team was replacing with its own component library.</dd></div>
-              <div><dt>Solution</dt><dd>An in-house React component library built with Tailwind CSS and Radix UI, adopted one component at a time while the site stayed live.</dd></div>
-              <div><dt>My contribution</dt><dd>Built FormGroup, ControlLabel, Panel, Row/Col and theme support, then swapped out Bootstrap panels, list groups, images and progress bars across the client.</dd></div>
+              <div>
+                <dt>Problem</dt>
+                <dd>The client's UI was built on React-Bootstrap, which the team was replacing with its own component
+                  library.</dd>
+              </div>
+              <div>
+                <dt>Solution</dt>
+                <dd>An in-house React component library built with Tailwind CSS and Radix UI, adopted one component at a
+                  time while the site stayed live.</dd>
+              </div>
+              <div>
+                <dt>My contribution</dt>
+                <dd>Built FormGroup, ControlLabel, Panel, Row/Col and theme support, then swapped out Bootstrap panels,
+                  list groups, images and progress bars across the client.</dd>
+              </div>
             </dl>
-            <ul class="tags" aria-label="Technologies"><li>React</li><li>TypeScript</li><li>Tailwind CSS</li><li>Radix UI</li><li>Testing Library</li></ul>
+            <ul class="tags" aria-label="Technologies">
+              <li>React</li>
+              <li>TypeScript</li>
+              <li>Tailwind CSS</li>
+              <li>Radix UI</li>
+              <li>Testing Library</li>
+            </ul>
             <p class="card-links">
               <a href="https://github.com/freeCodeCamp/freeCodeCamp/pull/50202">Code: PR #50202</a>
               <a href="https://github.com/freeCodeCamp/freeCodeCamp/pull/52011">PR #52011</a>
@@ -900,13 +383,30 @@ code {
               <h3>Chapter: event management for nonprofits</h3>
             </header>
             <dl class="card-facts">
-              <div><dt>Problem</dt><dd>Nonprofits needed a self-hosted tool to run community chapters and events.</dd></div>
-              <div><dt>Solution</dt><dd>Chapter, an open-source Next.js + Apollo GraphQL + PostgreSQL app with 1.9k GitHub stars.</dd></div>
-              <div><dt>My contribution</dt><dd>144 merged PRs: dashboard search, paginated queries, lazy loading, invite-only events, venue management and screen-reader-friendly forms.</dd></div>
+              <div>
+                <dt>Problem</dt>
+                <dd>Nonprofits needed a self-hosted tool to run community chapters and events.</dd>
+              </div>
+              <div>
+                <dt>Solution</dt>
+                <dd>Chapter, an open-source Next.js + Apollo GraphQL + PostgreSQL app with 1.9k GitHub stars.</dd>
+              </div>
+              <div>
+                <dt>My contribution</dt>
+                <dd>144 merged PRs: dashboard search, paginated queries, lazy loading, invite-only events, venue
+                  management and screen-reader-friendly forms.</dd>
+              </div>
             </dl>
-            <ul class="tags" aria-label="Technologies"><li>Next.js</li><li>React</li><li>Apollo GraphQL</li><li>PostgreSQL</li><li>Accessibility</li></ul>
+            <ul class="tags" aria-label="Technologies">
+              <li>Next.js</li>
+              <li>React</li>
+              <li>Apollo GraphQL</li>
+              <li>PostgreSQL</li>
+              <li>Accessibility</li>
+            </ul>
             <p class="card-links">
-              <a href="https://github.com/freeCodeCamp/chapter/pulls?q=is%3Apr+author%3ASboonny+is%3Amerged">Code: 144 merged PRs</a>
+              <a href="https://github.com/freeCodeCamp/chapter/pulls?q=is%3Apr+author%3ASboonny+is%3Amerged">Code: 144
+                merged PRs</a>
               <a href="https://github.com/freeCodeCamp/chapter/pull/2352">Accessibility: PR #2352</a>
               <span class="muted">No public demo</span>
             </p>
@@ -915,7 +415,6 @@ code {
       </div>
     </section>
 
-    <!-- ============ OPEN SOURCE ============ -->
     <section id="open-source" class="section" aria-labelledby="oss-title">
       <div class="container">
         <p class="section-kicker reveal">Open source</p>
@@ -924,15 +423,20 @@ code {
           <li class="reveal">
             <img src="https://github.com/t3-oss.png?size=64" alt="" width="32" height="32" loading="lazy">
             <div>
-              <h3><a href="https://github.com/t3-oss/create-t3-app/pulls?q=is%3Apr+author%3ASboonny+is%3Amerged">t3-oss/create-t3-app</a></h3>
-              <p>9 merged PRs: RTL layout fixes for the docs site and writing and proofreading the <a href="https://create.t3.gg/ar/introduction">Arabic documentation</a>.</p>
+              <h3><a
+                  href="https://github.com/t3-oss/create-t3-app/pulls?q=is%3Apr+author%3ASboonny+is%3Amerged">t3-oss/create-t3-app</a>
+              </h3>
+              <p>9 merged PRs: RTL layout fixes for the docs site and writing and proofreading the <a
+                  href="https://create.t3.gg/ar/introduction">Arabic documentation</a>.</p>
             </div>
           </li>
           <li class="reveal">
             <img src="https://github.com/mui.png?size=64" alt="" width="32" height="32" loading="lazy">
             <div>
               <h3><a href="https://github.com/mui/mui-x/pull/11554">mui/mui-x</a></h3>
-              <p>DataGrid developer warnings when <code>autoPageSize</code> is combined with <code>autoHeight</code> (<a href="https://github.com/mui/mui-x/pull/11554">#11554</a>, <a href="https://github.com/mui/mui-x/pull/11585">#11585</a>).</p>
+              <p>DataGrid developer warnings when <code>autoPageSize</code> is combined with <code>autoHeight</code> (<a
+                  href="https://github.com/mui/mui-x/pull/11554">#11554</a>, <a
+                  href="https://github.com/mui/mui-x/pull/11585">#11585</a>).</p>
             </div>
           </li>
           <li class="reveal">
@@ -952,7 +456,8 @@ code {
           <li class="reveal">
             <img src="https://github.com/freeCodeCamp.png?size=64" alt="" width="32" height="32" loading="lazy">
             <div>
-              <h3><a href="https://github.com/Sboonny/freeCodeCamp-Arabic-Translated-Articles">freeCodeCamp Arabic</a></h3>
+              <h3><a href="https://github.com/Sboonny/freeCodeCamp-Arabic-Translated-Articles">freeCodeCamp Arabic</a>
+              </h3>
               <p>Translated freeCodeCamp articles and policies into Arabic through the Crowdin workflow.</p>
             </div>
           </li>
@@ -960,7 +465,6 @@ code {
       </div>
     </section>
 
-    <!-- ============ SKILLS ============ -->
     <section id="skills" class="section" aria-labelledby="skills-title">
       <div class="container">
         <p class="section-kicker reveal">Technical skills</p>
@@ -968,41 +472,79 @@ code {
         <div class="skills">
           <div class="skill-group reveal">
             <h3>Frontend</h3>
-            <ul class="tags"><li>React</li><li>TypeScript</li><li>JavaScript</li><li>Redux</li><li>Next.js</li><li>HTML</li><li>CSS (Flexbox, Grid, logical properties)</li><li>Tailwind CSS</li><li>Radix UI</li></ul>
+            <ul class="tags">
+              <li>React</li>
+              <li>TypeScript</li>
+              <li>JavaScript</li>
+              <li>Redux</li>
+              <li>Next.js</li>
+              <li>HTML</li>
+              <li>CSS (Flexbox, Grid, logical properties)</li>
+              <li>Tailwind CSS</li>
+              <li>Radix UI</li>
+            </ul>
           </div>
           <div class="skill-group reveal">
             <h3>Backend &amp; APIs</h3>
-            <ul class="tags"><li>Node.js</li><li>Fastify</li><li>REST</li><li>GraphQL</li><li>Apollo</li><li>Prisma</li><li>PostgreSQL</li><li>tRPC</li><li>Sentry</li></ul>
+            <ul class="tags">
+              <li>Node.js</li>
+              <li>Fastify</li>
+              <li>REST</li>
+              <li>GraphQL</li>
+              <li>Apollo</li>
+              <li>Prisma</li>
+              <li>PostgreSQL</li>
+              <li>tRPC</li>
+              <li>Sentry</li>
+            </ul>
           </div>
           <div class="skill-group reveal">
             <h3>Testing &amp; quality</h3>
-            <ul class="tags"><li>Jest</li><li>React Testing Library</li><li>Cypress</li><li>Storybook</li><li>ESLint</li><li>Prettier</li><li>Code review</li></ul>
+            <ul class="tags">
+              <li>Jest</li>
+              <li>React Testing Library</li>
+              <li>Cypress</li>
+              <li>Storybook</li>
+              <li>ESLint</li>
+              <li>Prettier</li>
+              <li>Code review</li>
+            </ul>
           </div>
           <div class="skill-group reveal">
             <h3>i18n &amp; accessibility</h3>
-            <ul class="tags"><li>Right-to-left layouts</li><li>i18n</li><li>Arabic localization</li><li>Semantic HTML</li><li>Screen-reader-friendly forms</li></ul>
+            <ul class="tags">
+              <li>Right-to-left layouts</li>
+              <li>i18n</li>
+              <li>Arabic localization</li>
+              <li>Semantic HTML</li>
+              <li>Screen-reader-friendly forms</li>
+            </ul>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ============ ACHIEVEMENTS ============ -->
     <section id="achievements" class="section" aria-labelledby="achievements-title">
       <div class="container">
         <p class="section-kicker reveal">Achievements</p>
         <h2 id="achievements-title" class="reveal">Recognition &amp; community</h2>
         <ul class="achievements">
-          <li class="reveal"><strong>Top human contributor</strong><span>Most merged pull requests to freeCodeCamp/freeCodeCamp in 2022–2023 (373).</span></li>
-          <li class="reveal"><strong>Founder recommendation</strong><span>Recommended by Quincy Larson, founder of freeCodeCamp, who managed Muhammed directly.</span></li>
-          <li class="reveal"><strong>Arabic language lead</strong><span>Temporary Arabic language lead and translator for freeCodeCamp.</span></li>
-          <li class="reveal"><strong>Community moderator</strong><span>Moderator of the freeCodeCamp forum and Discord.</span></li>
-          <li class="reveal"><strong>Total TypeScript</strong><span>Type Transformations (2023) and TypeScript Generics (2024).</span></li>
-          <li class="reveal"><strong>Education</strong><span>B.Tech, Business and Information Management, Suez (2015–2020). Arabic native, English professional.</span></li>
+          <li class="reveal"><strong>Top human contributor</strong><span>Most merged pull requests to
+              freeCodeCamp/freeCodeCamp in 2022–2023 (373).</span></li>
+          <li class="reveal"><strong>Founder recommendation</strong><span>Recommended by Quincy Larson, founder of
+              freeCodeCamp, who managed Muhammed directly.</span></li>
+          <li class="reveal"><strong>Arabic language lead</strong><span>Temporary Arabic language lead and translator
+              for freeCodeCamp.</span></li>
+          <li class="reveal"><strong>Community moderator</strong><span>Moderator of the freeCodeCamp forum and
+              Discord.</span></li>
+          <li class="reveal"><strong>Total TypeScript</strong><span>Type Transformations (2023) and TypeScript Generics
+              (2024).</span></li>
+          <li class="reveal"><strong>Education</strong><span>B.Tech, Business and Information Management, Suez
+              (2015–2020). Arabic native, English professional.</span></li>
         </ul>
       </div>
     </section>
 
-    <!-- ============ CONTACT ============ -->
     <section id="contact" class="section" aria-labelledby="contact-title">
       <div class="container">
         <div class="contact-card reveal">
@@ -1024,181 +566,175 @@ code {
   <footer class="site-footer">
     <div class="container footer-inner">
       <p>© <span id="year">2026</span> Muhammed M. Mustafa</p>
-      <p class="muted">Plain HTML, CSS &amp; JavaScript, hosted on GitHub Pages. PR counts from GitHub search, Sept 2026.</p>
+      <p class="muted">Plain HTML, CSS &amp; JavaScript, hosted on GitHub Pages. PR counts from GitHub search, Sept
+        2026.</p>
     </div>
   </footer>
   <script>
-// Progressive enhancements only: every section is readable with JavaScript off.
-(() => {
-  const root = document.documentElement;
-  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
-  const prefersDark = window.matchMedia('(prefers-color-scheme: dark)');
+    // Progressive enhancements only: every section is readable with JavaScript off.
+    (() => {
+      const root = document.documentElement;
+      const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)');
 
-  // ---------- Theme toggle ----------
-  const themeBtn = document.querySelector('.theme-toggle');
+      // ---------- Theme toggle ----------
+      const themeBtn = document.querySelector('.theme-toggle');
 
-  const storedTheme = () => {
-    try { return localStorage.getItem('theme'); } catch { return null; }
-  };
-  const saveTheme = (value) => {
-    try { localStorage.setItem('theme', value); } catch { /* storage unavailable */ }
-  };
-  const currentTheme = () => root.dataset.theme || (prefersDark.matches ? 'dark' : 'light');
-  const applyTheme = (theme) => {
-    root.dataset.theme = theme;
-    themeBtn?.setAttribute('aria-pressed', String(theme === 'dark'));
-  };
-
-  applyTheme(currentTheme());
-
-  themeBtn?.addEventListener('click', () => {
-    const next = currentTheme() === 'dark' ? 'light' : 'dark';
-    applyTheme(next);
-    saveTheme(next);
-  });
-
-  prefersDark.addEventListener('change', (e) => {
-    if (!storedTheme()) applyTheme(e.matches ? 'dark' : 'light');
-  });
-
-  // ---------- Header border once the page scrolls ----------
-  const header = document.querySelector('.site-header');
-  const onScroll = () => header?.classList.toggle('is-scrolled', window.scrollY > 8);
-  onScroll();
-  window.addEventListener('scroll', onScroll, { passive: true });
-
-  // ---------- Mobile navigation ----------
-  const navToggle = document.querySelector('.nav-toggle');
-  const nav = document.getElementById('site-nav');
-
-  const setNav = (open) => {
-    nav?.classList.toggle('is-open', open);
-    navToggle?.setAttribute('aria-expanded', String(open));
-  };
-
-  navToggle?.addEventListener('click', () => setNav(navToggle.getAttribute('aria-expanded') !== 'true'));
-  nav?.addEventListener('click', (e) => { if (e.target.closest('a')) setNav(false); });
-  document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape' && nav?.classList.contains('is-open')) {
-      setNav(false);
-      navToggle?.focus();
-    }
-  });
-
-  // ---------- Highlight the nav link for the section in view ----------
-  const navLinks = new Map(
-    [...document.querySelectorAll('.site-nav a[href^="#"]')].map((a) => [a.getAttribute('href').slice(1), a])
-  );
-
-  if ('IntersectionObserver' in window && navLinks.size) {
-    const sectionObserver = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (!entry.isIntersecting) return;
-        navLinks.forEach((a) => a.removeAttribute('aria-current'));
-        navLinks.get(entry.target.id)?.setAttribute('aria-current', 'true');
-      });
-    }, { rootMargin: '-45% 0px -50% 0px' });
-    navLinks.forEach((_, id) => {
-      const el = document.getElementById(id);
-      if (el) sectionObserver.observe(el);
-    });
-  }
-
-  // ---------- Scroll reveal ----------
-  const revealEls = document.querySelectorAll('.reveal');
-  if (reduceMotion.matches || !('IntersectionObserver' in window)) {
-    revealEls.forEach((el) => el.classList.add('is-visible'));
-  } else {
-    const revealObserver = new IntersectionObserver((entries, obs) => {
-      entries.forEach((entry) => {
-        if (!entry.isIntersecting) return;
-        entry.target.classList.add('is-visible');
-        obs.unobserve(entry.target);
-      });
-    }, { rootMargin: '0px 0px -8% 0px', threshold: 0.08 });
-    revealEls.forEach((el) => revealObserver.observe(el));
-  }
-
-  // ---------- Count-up for the verified numbers ----------
-  // The real value is already in the HTML; this only animates up to it.
-  const counters = document.querySelectorAll('[data-count]');
-  const countUp = (el) => {
-    const target = Number(el.dataset.count);
-    const duration = 1200;
-    const start = performance.now();
-    const tick = (now) => {
-      const t = Math.min((now - start) / duration, 1);
-      const eased = 1 - Math.pow(1 - t, 3);
-      el.textContent = String(Math.round(target * eased));
-      if (t < 1) requestAnimationFrame(tick);
-    };
-    el.textContent = '0';
-    requestAnimationFrame(tick);
-  };
-  if (!reduceMotion.matches && 'IntersectionObserver' in window) {
-    const countObserver = new IntersectionObserver((entries, obs) => {
-      entries.forEach((entry) => {
-        if (!entry.isIntersecting) return;
-        countUp(entry.target);
-        obs.unobserve(entry.target);
-      });
-    }, { threshold: 0.6 });
-    counters.forEach((el) => countObserver.observe(el));
-  }
-
-  // ---------- LTR ↔ RTL demo ----------
-  const demo = document.querySelector('.dir-demo');
-  if (demo) {
-    const body = demo.querySelector('.dir-demo__body');
-    const attr = demo.querySelector('.dir-demo__attr');
-    const toggle = demo.querySelector('.dir-demo__toggle');
-    const texts = body.querySelectorAll('[data-en]');
-    let autoTimer = null;
-
-    const setDir = (dir) => {
-      const rtl = dir === 'rtl';
-      const swap = () => {
-        body.dir = dir;
-        body.lang = rtl ? 'ar' : 'en';
-        texts.forEach((el) => { el.textContent = rtl ? el.dataset.ar : el.dataset.en; });
-        attr.textContent = `dir="${dir}"`;
-        toggle.textContent = rtl ? 'Switch to LTR' : 'Switch to RTL';
-        toggle.setAttribute('aria-pressed', String(rtl));
-        body.classList.remove('is-flipping');
+      const storedTheme = () => {
+        try { return localStorage.getItem('theme'); } catch { return null; }
       };
-      if (reduceMotion.matches) { swap(); return; }
-      body.classList.add('is-flipping');
-      setTimeout(swap, 180);
-    };
+      const saveTheme = (value) => {
+        try { localStorage.setItem('theme', value); } catch { /* storage unavailable */ }
+      };
+      const currentTheme = () => root.dataset.theme || (prefersDark.matches ? 'dark' : 'light');
+      const applyTheme = (theme) => {
+        root.dataset.theme = theme;
+        themeBtn?.setAttribute('aria-pressed', String(theme === 'dark'));
+      };
 
-    const flip = () => setDir(body.dir === 'rtl' ? 'ltr' : 'rtl');
+      applyTheme(currentTheme());
 
-    toggle.addEventListener('click', () => {
-      clearInterval(autoTimer);   // the visitor is in control now
-      autoTimer = null;
-      flip();
-    });
+      themeBtn?.addEventListener('click', () => {
+        const next = currentTheme() === 'dark' ? 'light' : 'dark';
+        applyTheme(next);
+        saveTheme(next);
+      });
 
-    // Gentle autoplay while the card is on screen (never with reduced motion).
-    if (!reduceMotion.matches && 'IntersectionObserver' in window) {
-      let userTookOver = false;
-      toggle.addEventListener('click', () => { userTookOver = true; }, { once: true });
-      new IntersectionObserver(([entry]) => {
-        if (entry.isIntersecting && !autoTimer && !userTookOver) {
-          autoTimer = setInterval(flip, 3500);
-        } else if (!entry.isIntersecting && autoTimer) {
+      prefersDark.addEventListener('change', (e) => {
+        if (!storedTheme()) applyTheme(e.matches ? 'dark' : 'light');
+      });
+
+      const header = document.querySelector('.site-header');
+      const onScroll = () => header?.classList.toggle('is-scrolled', window.scrollY > 8);
+      onScroll();
+      window.addEventListener('scroll', onScroll, { passive: true });
+
+      // ---------- Mobile navigation ----------
+      const navToggle = document.querySelector('.nav-toggle');
+      const nav = document.getElementById('site-nav');
+
+      const setNav = (open) => {
+        nav?.classList.toggle('is-open', open);
+        navToggle?.setAttribute('aria-expanded', String(open));
+      };
+
+      navToggle?.addEventListener('click', () => setNav(navToggle.getAttribute('aria-expanded') !== 'true'));
+      nav?.addEventListener('click', (e) => { if (e.target.closest('a')) setNav(false); });
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && nav?.classList.contains('is-open')) {
+          setNav(false);
+          navToggle?.focus();
+        }
+      });
+
+      const navLinks = new Map(
+        [...document.querySelectorAll('.site-nav a[href^="#"]')].map((a) => [a.getAttribute('href').slice(1), a])
+      );
+
+      if ('IntersectionObserver' in window && navLinks.size) {
+        const sectionObserver = new IntersectionObserver((entries) => {
+          entries.forEach((entry) => {
+            if (!entry.isIntersecting) return;
+            navLinks.forEach((a) => a.removeAttribute('aria-current'));
+            navLinks.get(entry.target.id)?.setAttribute('aria-current', 'true');
+          });
+        }, { rootMargin: '-45% 0px -50% 0px' });
+        navLinks.forEach((_, id) => {
+          const el = document.getElementById(id);
+          if (el) sectionObserver.observe(el);
+        });
+      }
+
+      const revealEls = document.querySelectorAll('.reveal');
+      if (reduceMotion.matches || !('IntersectionObserver' in window)) {
+        revealEls.forEach((el) => el.classList.add('is-visible'));
+      } else {
+        const revealObserver = new IntersectionObserver((entries, obs) => {
+          entries.forEach((entry) => {
+            if (!entry.isIntersecting) return;
+            entry.target.classList.add('is-visible');
+            obs.unobserve(entry.target);
+          });
+        }, { rootMargin: '0px 0px -8% 0px', threshold: 0.08 });
+        revealEls.forEach((el) => revealObserver.observe(el));
+      }
+
+      const counters = document.querySelectorAll('[data-count]');
+      const countUp = (el) => {
+        const target = Number(el.dataset.count);
+        const duration = 1200;
+        const start = performance.now();
+        const tick = (now) => {
+          const t = Math.min((now - start) / duration, 1);
+          const eased = 1 - Math.pow(1 - t, 3);
+          el.textContent = String(Math.round(target * eased));
+          if (t < 1) requestAnimationFrame(tick);
+        };
+        el.textContent = '0';
+        requestAnimationFrame(tick);
+      };
+      if (!reduceMotion.matches && 'IntersectionObserver' in window) {
+        const countObserver = new IntersectionObserver((entries, obs) => {
+          entries.forEach((entry) => {
+            if (!entry.isIntersecting) return;
+            countUp(entry.target);
+            obs.unobserve(entry.target);
+          });
+        }, { threshold: 0.6 });
+        counters.forEach((el) => countObserver.observe(el));
+      }
+
+      const demo = document.querySelector('.dir-demo');
+      if (demo) {
+        const body = demo.querySelector('.dir-demo__body');
+        const attr = demo.querySelector('.dir-demo__attr');
+        const toggle = demo.querySelector('.dir-demo__toggle');
+        const texts = body.querySelectorAll('[data-en]');
+        let autoTimer = null;
+
+        const setDir = (dir) => {
+          const rtl = dir === 'rtl';
+          const swap = () => {
+            body.dir = dir;
+            body.lang = rtl ? 'ar' : 'en';
+            texts.forEach((el) => { el.textContent = rtl ? el.dataset.ar : el.dataset.en; });
+            attr.textContent = `dir="${dir}"`;
+            toggle.textContent = rtl ? 'Switch to LTR' : 'Switch to RTL';
+            toggle.setAttribute('aria-pressed', String(rtl));
+            body.classList.remove('is-flipping');
+          };
+          if (reduceMotion.matches) { swap(); return; }
+          body.classList.add('is-flipping');
+          setTimeout(swap, 180);
+        };
+
+        const flip = () => setDir(body.dir === 'rtl' ? 'ltr' : 'rtl');
+
+        toggle.addEventListener('click', () => {
           clearInterval(autoTimer);
           autoTimer = null;
-        }
-      }, { threshold: 0.5 }).observe(demo);
-    }
-  }
+          flip();
+        });
 
-  // ---------- Footer year ----------
-  const year = document.getElementById('year');
-  if (year) year.textContent = String(new Date().getFullYear());
-})();
+        if (!reduceMotion.matches && 'IntersectionObserver' in window) {
+          let userTookOver = false;
+          toggle.addEventListener('click', () => { userTookOver = true; }, { once: true });
+          new IntersectionObserver(([entry]) => {
+            if (entry.isIntersecting && !autoTimer && !userTookOver) {
+              autoTimer = setInterval(flip, 3500);
+            } else if (!entry.isIntersecting && autoTimer) {
+              clearInterval(autoTimer);
+              autoTimer = null;
+            }
+          }, { threshold: 0.5 }).observe(demo);
+        }
+      }
+
+      const year = document.getElementById('year');
+      if (year) year.textContent = String(new Date().getFullYear());
+    })();
 
   </script>
 </body>
+
 </html>
